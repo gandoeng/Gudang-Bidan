@@ -1,5 +1,6 @@
 package com.example.gudangbidan;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -30,8 +31,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //Setiap method ini dipanggil maka database akan terbentuk
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
-        SQLiteDatabase db = this.getWritableDatabase();
-
     }
 
 
@@ -74,7 +73,41 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // ---------------------------------------------- Methode tabel pasien ----------------------------------------------- //
 
+    //method menambahkan data pada tabel pasien
+    public boolean insertDataPasien (pasien n){
+        SQLiteDatabase db = this.getWritableDatabase();
 
+        ContentValues contentValues = new ContentValues();
 
+        contentValues.put(this.id_pasien,n.getId());
+        contentValues.put(this.nama, n.getNama());
+        contentValues.put(this.tanggal_lahir, n.getTanggal_lahir());
+        contentValues.put(this.umur, n.getUmur());
 
+        long result = db.insert(pasien, null, contentValues);
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    // ---------------------------------------------- Methode tabel penyakit --------------------------------------------- //
+
+    public boolean insertDataPenyakit(penyakit t){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(this.id_pasien2, t.getId_pasien());
+        contentValues.put(this.diagnosa,t.getDiagnosa());
+        contentValues.put(this.keluhan, t.getKeluhan());
+
+        long result = db.insert(penyakit, null, contentValues );
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
 }

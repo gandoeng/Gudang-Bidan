@@ -3,4 +3,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="hint_namaPasien">Ketikkan nama disini</string>
+    <string name="hint_tanggal">Ketikkan tanggal lahir disini (DD-MM-YYY)</string>
+    <string name="hint_umur">Ketikkan umur disini</string>
+    <string name="text_tambahData">Tambah</string>
+    <string name="text_noRegristrasi">No regristrasi</string>
+    <string name="hint_regristrasi">Ketikkan nomor regristasi pasien disini</string>
+    <string name="text_nama">Nama</string>
+    <string name="text_tanggalLahir">Tanggal Lahir</string>
+    <string name="text_umur">umur</string>
 </resources>

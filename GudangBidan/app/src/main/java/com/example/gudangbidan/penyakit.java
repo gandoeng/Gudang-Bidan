@@ -3,10 +3,17 @@ package com.example.gudangbidan;
 public class penyakit {
 
     String diagnosa,keluhan;
+    int id_pasien;
 
     //construktor
     public penyakit(){
 
+    }
+
+    public penyakit(int id_pasien, String diagnosa, String keluhan){
+        this.id_pasien = id_pasien;
+        this.keluhan = keluhan;
+        this.diagnosa = diagnosa;
     }
 
     //setter
@@ -18,6 +25,8 @@ public class penyakit {
         this.keluhan = keluhan;
     }
 
+    public void setId_pasien(int id_pasien){ this.id_pasien = id_pasien; }
+
     //getter
     public String getDiagnosa(){
         return this.diagnosa;
@@ -27,4 +36,5 @@ public class penyakit {
         return this.keluhan;
     }
 
+    public int getId_pasien() { return this.id_pasien; }
 }

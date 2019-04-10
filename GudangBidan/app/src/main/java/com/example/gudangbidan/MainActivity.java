@@ -11,6 +11,9 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
 
+    //Memdeklarasikan database yang sudah dibuat
+    DatabaseHelper myDB;
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -39,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        //Membentuk database
+        myDB = new DatabaseHelper(this);
     }
 
 }

@@ -19,7 +19,7 @@ public class pasien {
     }
 
     //setters
-    public void setId(int id_pasien){
+    public void setIdPasien(int id_pasien){
         this.id_pasien = id_pasien;
     }
 
@@ -51,5 +51,7 @@ public class pasien {
     public String getTanggal_lahir(){
         return this.tanggal_lahir;
     }
+
+    public int getIdPasien(){ return this.id_pasien;}
 
 }

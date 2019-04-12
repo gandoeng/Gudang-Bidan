@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat",
-        "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat",
+        "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable/abc_switch_thumb_material.xml"
     },
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -44,12 +44,16 @@
         "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/layout_design_layout_tab_text.xml.flat",
-        "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/af83f7009821c09c0021e77eb6958748/res/layout/design_layout_tab_text.xml"
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable_ic_tambah.xml.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/drawable/ic_tambah.xml"
     },
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/layout_design_layout_tab_text.xml.flat",
+        "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/af83f7009821c09c0021e77eb6958748/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1192,6 +1196,10 @@
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/af83f7009821c09c0021e77eb6958748/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
     },
     {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable_ic_tambah2.xml.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/drawable/ic_tambah2.xml"
+    },
+    {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
@@ -1346,6 +1354,10 @@
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable_ic_pasien.xml.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/drawable/ic_pasien.xml"
     },
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat",
@@ -1606,6 +1618,10 @@
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/layout_activity_data_pasien.xml.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/layout/activity_data_pasien.xml"
     },
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",

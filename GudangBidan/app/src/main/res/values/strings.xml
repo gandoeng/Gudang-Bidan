@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Gudang Bidan</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Beranda</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="hint_namaPasien">Ketikkan nama disini</string>
     <string name="hint_tanggal">Ketikkan tanggal lahir disini (DD-MM-YYY)</string>
     <string name="hint_umur">Ketikkan umur disini</string>
     <string name="text_tambahData">Tambah</string>
-    <string name="text_noRegristrasi">No regristrasi</string>
+    <string name="text_noRegristrasi">No. Reg</string>
     <string name="hint_regristrasi">Ketikkan nomor regristasi pasien disini</string>
     <string name="text_nama">Nama</string>
     <string name="text_tanggalLahir">Tanggal Lahir</string>
@@ -17,5 +17,9 @@
     <string name="text_diagnosa">Diagnosa</string>
     <string name="hint_diagnosa">Ketikkan diagnosa disini</string>
     <string name="title_tambahData">Tambah</string>
-    <string name="title_pasien">Pasien</string>
+    <string name="title_pasien">Diagnosa</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_simpanData">Simpan</string>
 </resources>

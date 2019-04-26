@@ -8,6 +8,7 @@ MERGED from [com.android.support:design:27.1.1] /Users/macbook-air/.gradle/cache
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f51d3ae74db8b9fe989c007a14151bcf/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/1a5fb17ff6a7048e4c4382946288acd8/AndroidManifest.xml:17:1-22:12
+MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4caefbe5f9b78337cb769d89223c179f/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/bedbf57b03845b5e4d35bdfb11fe7d34/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7c7282b98c5679a6601a3a85a4b73ae7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ecd86d2fc586a57d4cc0a9d1bed86618/AndroidManifest.xml:17:1-22:12
@@ -55,15 +56,13 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/macb
 	android:theme
 		ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.gudangbidan.MainActivity
-ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:12:9-59
-	android:name
-		ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:12:19-47
-activity#com.example.gudangbidan.dataPasien
-ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:13:9-21:20
+ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:12:9-21:20
 	android:label
-		ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:15:13-45
+		ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:14:13-45
+	android:windowSoftInputMode
+		ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:15:13-52
 	android:name
-		ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:14:13-39
+		ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
@@ -86,6 +85,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/macb
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f51d3ae74db8b9fe989c007a14151bcf/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-v4:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/1a5fb17ff6a7048e4c4382946288acd8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/1a5fb17ff6a7048e4c4382946288acd8/AndroidManifest.xml:20:5-44
+MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4caefbe5f9b78337cb769d89223c179f/AndroidManifest.xml:8:5-10:41
+MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4caefbe5f9b78337cb769d89223c179f/AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/bedbf57b03845b5e4d35bdfb11fe7d34/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/bedbf57b03845b5e4d35bdfb11fe7d34/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7c7282b98c5679a6601a3a85a4b73ae7/AndroidManifest.xml:20:5-44

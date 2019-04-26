@@ -14,7 +14,6 @@
     <item
         android:id="@+id/navigation_tambahData"
         android:icon="@drawable/ic_tambah2"
-        android:title="@string/title_tambahData"
-        android:enabled="true"/>
+        android:title="@string/title_tambahData" />
 
 </menu>

@@ -503,6 +503,7 @@ color material_grey_900
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color pencet
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -676,6 +677,11 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen padding_all
+dimen padding_atas
+dimen padding_kiri
+dimen text_size
+dimen text_size2
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -804,6 +810,9 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id TampilIdPasien
+id TampilNama
+id TampilTanggalLahir
 id action0
 id action_bar
 id action_bar_activity_content
@@ -837,6 +846,7 @@ id bottom
 id btnSubmitPasien
 id buttonPanel
 id cancel_action
+id cari
 id center
 id center_horizontal
 id center_vertical
@@ -880,6 +890,8 @@ id fill_horizontal
 id fill_vertical
 id fixed
 id forever
+id fram
+id frameLayout
 id ghost_view
 id gone
 id groups
@@ -897,7 +909,7 @@ id largeLabel
 id left
 id line1
 id line3
-id linearLayout
+id linearLayout1
 id listMode
 id list_item
 id masked
@@ -938,6 +950,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -1042,7 +1055,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_data_pasien
 layout activity_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1058,6 +1070,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_tambah_data2
+layout fragment_update_data
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1113,6 +1127,7 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_pattern
+string hello_blank_fragment
 string hint_diagnosa
 string hint_keluhan
 string hint_namaPasien
@@ -1130,6 +1145,7 @@ string text_diagnosa
 string text_keluhan
 string text_nama
 string text_noRegristrasi
+string text_simpanData
 string text_tambahData
 string text_tanggalLahir
 string text_umur

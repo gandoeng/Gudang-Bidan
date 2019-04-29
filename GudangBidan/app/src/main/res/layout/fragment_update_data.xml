@@ -26,72 +26,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <SearchView
-                    android:id="@+id/cari"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:id="@+id/textRegrister"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/padding_atas"
                     android:text="@string/text_noRegristrasi"
                     android:textSize="@dimen/text_size2"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/TampilIdPasien"
+                <EditText
+                    android:id="@+id/editIdPasien"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:paddingLeft="@dimen/padding_kiri" />
-
-                <TextView
-                    android:id="@+id/textNama"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_nama"
-                    android:textSize="@dimen/text_size2"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/TampilNama"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:paddingLeft="@dimen/padding_kiri" />
-
-                <TextView
-                    android:id="@+id/textTanggalLahir"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_tanggalLahir"
-                    android:textSize="@dimen/text_size2"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/TampilTanggalLahir"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:paddingLeft="@dimen/padding_kiri"
+                    android:hint="@string/hint_regristrasi"
+                    android:inputType="number"
                     android:textSize="@dimen/text_size2" />
-
-                <TextView
-                    android:id="@+id/textUmur"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_umur"
-                    android:textSize="@dimen/text_size2"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/editUmur"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:paddingLeft="@dimen/padding_kiri" />
 
                 <TextView
                     android:id="@+id/textKeluhan"
@@ -108,7 +59,6 @@
                     android:ems="10"
                     android:hint="@string/hint_keluhan"
                     android:inputType="textMultiLine|text"
-                    android:paddingLeft="@dimen/padding_kiri"
                     android:textSize="@dimen/text_size2" />
 
                 <TextView
@@ -129,7 +79,7 @@
                     android:textSize="@dimen/text_size2" />
 
                 <Button
-                    android:id="@+id/btnSubmitPasien"
+                    android:id="@+id/btnSubmitPenyakit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="23dp"

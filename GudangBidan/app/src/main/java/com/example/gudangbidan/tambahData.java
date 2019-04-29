@@ -39,13 +39,13 @@ public class tambahData extends Fragment {
         //mengaktifkan database
         myDB = new DatabaseHelper(getActivity());
 
-        editNama = (EditText) view.findViewById(R.id.editNama);
-        editTanggalLahir = (EditText) view.findViewById(R.id.editTanggalLahir);
-        editUmur = (EditText) view.findViewById(R.id.editUmur);
-        editIdPasien = (EditText) view.findViewById(R.id.editIdPasien);
-        editKeluhan = (EditText) view.findViewById(R.id.editKeluhan);
-        editDiagnosa = (EditText) view.findViewById(R.id.editDiagnosa);
-        btnSubmitPasien = (Button) view.findViewById(R.id.btnSubmitPasien);
+        editNama = view.findViewById(R.id.editNama);
+        editTanggalLahir = view.findViewById(R.id.editTanggalLahir);
+        editUmur = view.findViewById(R.id.editUmur);
+        editIdPasien = view.findViewById(R.id.editIdPasien);
+        editKeluhan = view.findViewById(R.id.editKeluhan);
+        editDiagnosa = view.findViewById(R.id.editDiagnosa);
+        btnSubmitPasien = view.findViewById(R.id.btnSubmitPasien);
 
         //memanngil kelas lain
         p = new pasien();

@@ -810,9 +810,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id TampilIdPasien
-id TampilNama
-id TampilTanggalLahir
 id action0
 id action_bar
 id action_bar_activity_content
@@ -844,9 +841,9 @@ id beginning
 id blocking
 id bottom
 id btnSubmitPasien
+id btnSubmitPenyakit
 id buttonPanel
 id cancel_action
-id cari
 id center
 id center_horizontal
 id center_vertical

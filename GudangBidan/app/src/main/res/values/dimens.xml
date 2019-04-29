@@ -7,4 +7,7 @@
     <dimen name="padding_all">5dp</dimen>
     <dimen name="padding_atas">30px</dimen>
     <dimen name="padding_kiri">15dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="card_size">8dp</dimen>
+    <dimen name="ukuran_text">18sp</dimen>
 </resources>

@@ -7,6 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     //Memdeklarasikan database yang sudah dibuat
     DatabaseHelper myDB;
 
+    //membuat bottom navbar
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -28,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+                    setTitle("Beranda");
+                    beranda fragment3 = new beranda();
+                    FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction3.replace(R.id.fram, fragment3, "Beranda");
+                    fragmentTransaction3.commit();
                     return true;
                 case R.id.navigation_pasien:
                     setTitle("Diagnosa");
@@ -57,8 +64,16 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+
         //Membentuk database
         myDB = new DatabaseHelper(this);
+
+        //tampilan pertama kali
+        setTitle("Beranda");
+        beranda fragment3 = new beranda();
+        FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction3.replace(R.id.fram, fragment3, "Beranda");
+        fragmentTransaction3.commit();
 
     }
 

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -32,13 +34,20 @@ public class updateData extends Fragment {
         // Required empty public constructor
     }
 
-
+    //membuat navbar atas
+    public void onCreateOptionsMenu(Menu menu, MenuInflater getMenuInflater){
+        //membaca file menu
+        getMenuInflater.inflate(R.menu.menu, menu);
+        super.onCreateOptionsMenu(menu,getMenuInflater);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_update_data, container, false);
+
+        setHasOptionsMenu(true);
 
         //memanggil class
         myDB = new DatabaseHelper(getActivity());

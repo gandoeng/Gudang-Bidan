@@ -2,13 +2,16 @@ package com.example.gudangbidan;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     //Deklarasi nama database
     public static final String DATABASE_NAME = "gudangBidan.db";
+    private static final String LOG = "DatabaseHelper";
 
     //Deklarasi tabel pasien
     public static final String pasien = "pasien";
@@ -110,4 +113,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
+    public boolean cekPasien(int p){
+        SQLiteDatabase db = this.getWritableDatabase();
+        int i = 0;
+
+        //kode SQLite
+        String SelectQuery = "SELECT * FROM "+penyakit+" WHERE "+id_pasien2+" = "+p;
+
+        //menampilkan pesan error di log jika ada error
+        Log.e(LOG, SelectQuery);
+
+
+        Cursor c = db.rawQuery(SelectQuery, null);
+
+
+        //looping data
+        if(c.moveToFirst()){
+            do{
+                i=1;
+            }while(c.moveToNext());
+        }
+
+        //cek
+        if (i == 1)
+            return true;
+        else
+            return false;
+    }
+
 }

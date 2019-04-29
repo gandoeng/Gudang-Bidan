@@ -59,10 +59,16 @@ public class updateData extends Fragment {
     //simpan data ke class penyakit
     public penyakit tambahPenyakit(){
         t.setId_pasien(Integer.parseInt(String.valueOf(idPasien.getText())));
-        t.setKeluhan(keluhan.getText().toString());
-        t.setDiagnosa(diagnosa.getText().toString());
 
-        return  t;
+        boolean cek = myDB.cekPasien(t.getId_pasien());
+
+        if(cek == true){
+            t.setKeluhan(keluhan.getText().toString());
+            t.setDiagnosa(diagnosa.getText().toString());
+            return  t;
+        } else {
+            return null;
+        }
     }
 
     //tambah data ke kolom penyakit
@@ -73,18 +79,27 @@ public class updateData extends Fragment {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //menyimpan data ke dalam tabel penyakit
-                        boolean insertDataPenyakit = myDB.insertDataPenyakit(tambahPenyakit());
 
-                        //cek apakah berhasil ditambahkan atau tidak
-                        if(insertDataPenyakit == true){
-                            Toast.makeText(getActivity(),"Tersimpan",Toast.LENGTH_LONG).show();
-                            idPasien.getText().clear();
-                            keluhan.getText().clear();
-                            diagnosa.getText().clear();
+                        if (tambahPenyakit() == null){
+                            Toast.makeText(getActivity(),"Id Pasien tidak ditemukan",
+                                    Toast.LENGTH_LONG).show();
                         } else {
-                            Toast.makeText(getActivity(),"Gagal",Toast.LENGTH_LONG).show();
+                            //menyimpan data ke dalam tabel penyakit
+                            boolean insertDataPenyakit = myDB.insertDataPenyakit(tambahPenyakit());
+
+                            //cek apakah berhasil ditambahkan atau tidak
+                            if(insertDataPenyakit == true){
+                                Toast.makeText(getActivity(),"Tersimpan",
+                                        Toast.LENGTH_LONG).show();
+                                idPasien.getText().clear();
+                                keluhan.getText().clear();
+                                diagnosa.getText().clear();
+                            } else {
+                                Toast.makeText(getActivity(),"Gagal",
+                                        Toast.LENGTH_LONG).show();
+                            }
                         }
+
                     }
                 }
         );

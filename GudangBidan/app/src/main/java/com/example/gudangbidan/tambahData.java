@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 
@@ -24,6 +25,7 @@ public class tambahData extends Fragment {
     //mendeklarasikan textPlan dan btn
     EditText editNama,editTanggalLahir,editUmur,editIdPasien,editKeluhan,editDiagnosa;
     Button btnSubmitPasien;
+    Spinner pilih;
 
     public tambahData() {
         // Required empty public constructor

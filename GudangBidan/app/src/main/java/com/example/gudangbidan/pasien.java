@@ -2,7 +2,7 @@ package com.example.gudangbidan;
 
 public class pasien {
     int id_pasien;
-    String nama,tanggal_lahir;
+    String nama,tanggal_lahir,status;
     int umur;
 
 
@@ -11,11 +11,12 @@ public class pasien {
 
     }
 
-    public pasien (int id_pasien,String nama, int umur, String tanggal_lahir) {
+    public pasien (int id_pasien,String nama, int umur, String tanggal_lahir, String status) {
         this.id_pasien = id_pasien;
         this.nama = nama;
         this.umur = umur;
         this.tanggal_lahir = tanggal_lahir;
+
     }
 
     //setters
@@ -35,6 +36,8 @@ public class pasien {
         this.tanggal_lahir = tanggal_lahir;
     }
 
+
+
     //getters
     public int getId(){
         return this.id_pasien;
@@ -53,5 +56,6 @@ public class pasien {
     }
 
     public int getIdPasien(){ return this.id_pasien;}
+
 
 }

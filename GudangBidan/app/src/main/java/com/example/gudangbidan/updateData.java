@@ -50,6 +50,9 @@ public class updateData extends Fragment {
         diagnosa = view.findViewById(R.id.editDiagnosa);
         tambah = view.findViewById(R.id.btnSubmitPenyakit);
 
+        //aksi tambah data
+        addData();
+
         return  view;
     }
 

@@ -781,6 +781,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable flashscreen
+drawable gendong
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
@@ -969,6 +971,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id spacer
+id splasScreen
 id split_action_bar
 id spread
 id spread_inside
@@ -992,6 +995,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textTanggalLahir
 id textUmur
+id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1053,6 +1057,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_splas_screen
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1143,6 +1148,7 @@ string text_keluhan
 string text_nama
 string text_noRegristrasi
 string text_simpanData
+string text_status
 string text_tambahData
 string text_tanggalLahir
 string text_umur
@@ -1340,6 +1346,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style Splashscreen
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2

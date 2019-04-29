@@ -12,7 +12,13 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity
+            android:name=".splasScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

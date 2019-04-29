@@ -200,6 +200,10 @@
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/layout_activity_splas_screen.xml.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/layout/activity_splas_screen.xml"
+    },
+    {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3ca91d1c15dfd2ee917f770a89642b6c/res/layout-v21/notification_action.xml"
     },
@@ -1624,6 +1628,10 @@
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/color/abc_tint_default.xml"
     },
     {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-v24_flashscreen.png.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/drawable-v24/flashscreen.png"
+    },
+    {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
@@ -1730,6 +1738,10 @@
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-v24_gendong.png.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/drawable-v24/gendong.png"
     },
     {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/layout_design_layout_snackbar_include.xml.flat",

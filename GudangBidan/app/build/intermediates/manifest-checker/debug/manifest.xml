@@ -20,7 +20,12 @@
         <activity
             android:name="com.example.gudangbidan.MainActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustPan" >
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.gudangbidan.splasScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

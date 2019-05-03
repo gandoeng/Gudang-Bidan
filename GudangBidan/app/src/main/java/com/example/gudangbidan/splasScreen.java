@@ -24,7 +24,7 @@ public class splasScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(splasScreen.this,MainActivity.class);
+                Intent i = new Intent(splasScreen.this,Login.class);
 
                 //menghubungkan activity splahscreen ke MainActivity
                 startActivity(i);

@@ -457,6 +457,8 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color blue
+color blueDark
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -527,6 +529,7 @@ color switch_thumb_normal_material_light
 color textColor_button
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -782,13 +785,14 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable flashscreen
-drawable gendong
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_lock_black_24dp
 drawable ic_notifications_black_24dp
 drawable ic_pasien
+drawable ic_person_black_24dp
 drawable ic_tambah
 drawable ic_tambah2
 drawable navigation_empty_icon
@@ -804,6 +808,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable shapelogin
+drawable shapeusername
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -844,6 +850,7 @@ id blocking
 id bottom
 id btnSubmitPasien
 id btnSubmitPenyakit
+id buttonLogin
 id buttonPanel
 id cancel_action
 id center
@@ -874,8 +881,10 @@ id editDiagnosa
 id editIdPasien
 id editKeluhan
 id editNama
+id editPassword
 id editTanggalLahir
 id editUmur
+id editUsername
 id edit_query
 id end
 id end_padder
@@ -1056,6 +1065,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login
 layout activity_main
 layout activity_splas_screen
 layout design_bottom_navigation_item
@@ -1094,8 +1104,10 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu navigation
+mipmap gendong
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap logo
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

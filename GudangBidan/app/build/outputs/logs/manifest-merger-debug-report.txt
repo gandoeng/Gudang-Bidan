@@ -1,13 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\93da18e8c153a9ecbecc81821b6724fa\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5cad439c02bd47f0916da86e57dde3ad\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\8f5baa96dd1c5a9c01a4cc5d5643c3f0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8f6e1c1ea910035a879b6835b2b0a05c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-16.0.0.aar\50c9963078a601eadb265aa7b4dbd44c\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-16.0.0.aar\cd6fd9e5ed4794eb775df3a8e704ff86\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\e013696f59c59447784eaf613a22e00c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e91e7eb3dbf9610a2fb89ad74956a2c5\AndroidManifest.xml:17:1-22:12
 MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\keyboardvisibilityevent-2.1.0.aar\ff5afd39a0d7ee3065c49e7487b91092\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\239aa2d7aa1f343968ae3e2a8bfd4b08\AndroidManifest.xml:17:1-22:12
@@ -23,73 +29,93 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Arum\.gradle\c
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6c831824c93764e479ba8da1b0070e60\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c4625b15fd1619cad179bf0e09281ec6\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\41c1b4f05f78e2fc0762e3b76080c10d\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
 	package
 		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:1-60:12
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:5:5-59:19
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:8:5-58:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8f6e1c1ea910035a879b6835b2b0a05c\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8f6e1c1ea910035a879b6835b2b0a05c\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\e013696f59c59447784eaf613a22e00c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\e013696f59c59447784eaf613a22e00c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:22:5-26:19
 	android:supportsRtl
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.gudangbidan.Profil
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:15:9-53
+	android:name
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:15:19-41
 activity#com.example.gudangbidan.Register
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:13:19-43
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:16:19-43
 intent-filter#action:name:android.intent.action.REGISTER+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.REGISTER
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:15:17-73
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:18:17-73
 	android:name
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:15:25-70
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:18:25-70
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.example.gudangbidan.BerandaLogin
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:23:9-29:20
 	android:name
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:23:19-47
 intent-filter#action:name:android.intent.action.BERANDALOGIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.BERANDALOGIN
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:23:25-74
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:25:25-74
 activity#com.example.gudangbidan.Login
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:29:9-35:20
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:30:9-36:20
 	android:name
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:29:19-40
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:30:19-40
 intent-filter#action:name:android.intent.action.LOGIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.LOGIN
-ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:31:17-70
+ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:32:17-70
 	android:name
-		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:31:25-67
+		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:32:25-67
 activity#com.example.gudangbidan.MainActivity
 ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:37:9-41:55
 	android:parentActivityName
@@ -134,6 +160,18 @@ MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Arum\.gradle\cache
 MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\8f5baa96dd1c5a9c01a4cc5d5643c3f0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8f6e1c1ea910035a879b6835b2b0a05c\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\8f6e1c1ea910035a879b6835b2b0a05c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-16.0.0.aar\50c9963078a601eadb265aa7b4dbd44c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-16.0.0.aar\50c9963078a601eadb265aa7b4dbd44c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-16.0.0.aar\cd6fd9e5ed4794eb775df3a8e704ff86\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-16.0.0.aar\cd6fd9e5ed4794eb775df3a8e704ff86\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\e013696f59c59447784eaf613a22e00c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\e013696f59c59447784eaf613a22e00c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e91e7eb3dbf9610a2fb89ad74956a2c5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e91e7eb3dbf9610a2fb89ad74956a2c5\AndroidManifest.xml:20:5-44
 MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\keyboardvisibilityevent-2.1.0.aar\ff5afd39a0d7ee3065c49e7487b91092\AndroidManifest.xml:8:5-10:41
@@ -174,3 +212,35 @@ INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\s
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.1.aar\f1cebb42e62c6518716ab8f6bf4e5005\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\432eb0b679542df0b1d23de2b1666b12\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:24:13-58

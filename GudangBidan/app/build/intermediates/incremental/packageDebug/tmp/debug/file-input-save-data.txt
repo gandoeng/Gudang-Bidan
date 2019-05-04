@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat May 04 19:48:07 ICT 2019
+#Sat May 04 21:13:11 ICT 2019
 1.base=C\:\\Users\\Arum\\AndroidStudioProjects\\Gudang-Bidan\\GudangBidan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

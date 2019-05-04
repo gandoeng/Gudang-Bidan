@@ -48,15 +48,25 @@
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapelogin"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
         android:text="Masuk"
         android:textColor="@color/white"
-        android:shadowColor="@android:color/transparent"
-        android:padding="15dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/shapelogin"/>
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/imagebuttonGoogle"
+        android:layout_width="343dp"
+        android:layout_height="37dp"
+        android:background="@drawable/shapegoogle"
+        android:elevation="4dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/google" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -68,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:textColor="@android:color/white"
-            android:text="Belum punya akun?"/>
+            android:text="Belum punya akun?" />
 
         <TextView
             android:id="@+id/textviewRegister"
@@ -81,7 +91,5 @@
 
 
     </LinearLayout>
-
-
 
 </LinearLayout>

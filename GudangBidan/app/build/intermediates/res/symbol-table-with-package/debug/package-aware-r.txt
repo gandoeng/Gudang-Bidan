@@ -819,9 +819,7 @@ drawable ic_pengaturan
 drawable ic_person_black_24dp
 drawable ic_tambah
 drawable ic_tambah2
-drawable imunisasi
 drawable keluar
-drawable konsultasi
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -835,7 +833,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable rekam_medis
 drawable shapelogin
 drawable shapeusername
 drawable tooltip_frame_dark
@@ -880,6 +877,7 @@ id btnSubmitPasien
 id btnSubmitPenyakit
 id buttonLogin
 id buttonPanel
+id button_Register
 id cancel_action
 id center
 id center_horizontal
@@ -889,6 +887,7 @@ id checkbox
 id chronometer
 id clip_horizontal
 id clip_vertical
+id cnf_Password
 id collapseActionView
 id container
 id contentPanel
@@ -1036,6 +1035,8 @@ id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
+id textviewLogin
+id textviewRegister
 id time
 id title
 id titleDividerNoCustom
@@ -1096,6 +1097,7 @@ layout abc_tooltip
 layout activity_beranda_login
 layout activity_login
 layout activity_main
+layout activity_register
 layout activity_splas_screen
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1138,7 +1140,10 @@ menu navigation
 mipmap gendong
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap imunisasi
+mipmap konsultasi
 mipmap logo
+mipmap rekam_medis
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

@@ -30,6 +30,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String keluhan = "keluhan";
     public static final String id_pasien2 = "id_pasien2";
 
+    //Deklarasi tabel penyakit
+    public static final String user = "user";
+
+    //Deklarasi kolom tabel user
+    public static final String id_user = "id_user";
+    public static final String username = "username";
+    public static final String password = "password";
+
 
     //Setiap method ini dipanggil maka database akan terbentuk
     public DatabaseHelper(@Nullable Context context) {
@@ -54,6 +62,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "(" + id_pasien2 + " INTEGER," + keluhan + " TEXT," + diagnosa + " TEXT," +
                         "FOREIGN KEY ("+ id_pasien2 + ") REFERENCES " + pasien + "(" + id_pasien + ") );"
         );
+
+        //create table user
+        db.execSQL(
+                "CREATE TABLE " + user +
+                        "(" + id_user + " INTEGER PRIMARY KEY AUTOINCREMENT," + username + " TEXT," + password + " TEXT" + " );"
+        );
     }
 
     @Override
@@ -68,6 +82,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         //drop tabel penyakit
         db.execSQL(
                 "DROP TABLE IF EXISTS " + penyakit+";"
+        );
+
+        //drop tabel user
+        db.execSQL(
+                "DROP TABLE IF EXISTS " + user+";"
         );
 
         //create table
@@ -139,6 +158,35 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
         else
             return false;
+    }
+
+    // ---------------------------------------------- Methode tabel user --------------------------------------------- //
+
+
+    public long addUser(String usernm, String pass){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("username",usernm);
+        contentValues.put("password",pass);
+        long res = db.insert(user,null,contentValues);
+        db.close();
+        return  res;
+    }
+
+    public boolean checkUser(String usernm, String pass){
+        String[] columns = { id_user };
+        SQLiteDatabase db = getReadableDatabase();
+        String selection = username + "=?" + " and " + password + "=?";
+        String[] selectionArgs = { usernm, pass };
+        Cursor cursor = db.query(user,columns,selection,selectionArgs,null,null,null);
+        int count = cursor.getCount();
+        cursor.close();
+        db.close();
+
+        if(count>0)
+            return  true;
+        else
+            return  false;
     }
 
 }

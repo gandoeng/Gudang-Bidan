@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_margin="10dp"
-        android:id="@+id/profile_text"
+        android:id="@+id/profilname"
         android:textColor="@color/white"
         android:text="Nama"
         android:textSize="16sp"
@@ -25,11 +25,11 @@
         android:layout_height="wrap_content" />
     <TextView
         android:textSize="14sp"
-        android:id="@+id/profile_email"
+        android:id="@+id/profil_email"
         android:layout_width="wrap_content"
         android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/profile_text"
+        android:layout_below="@id/profilname"
         android:layout_height="wrap_content" />
     <Button
         android:layout_width="140dp"

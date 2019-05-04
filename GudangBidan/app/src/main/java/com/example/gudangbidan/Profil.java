@@ -2,61 +2,88 @@ package com.example.gudangbidan;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
+import com.bumptech.glide.Glide;
+
 
 public class Profil extends AppCompatActivity {
-    public static final String GOOGLE_ACCOUNT = "google_account";
-    private TextView profileName, profileEmail;
-    private ImageView profileImage;
-    private Button signOut;
-    private GoogleSignInClient googleSignInClient;
+    GoogleSignInClient mGoogleSignInClient;
+    Button SignOut;
+    TextView nameprofil;
+    EditText username;
+    TextView emailprofil;
+    ImageView fotoprofil;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
-        profileName = findViewById(R.id.profile_text);
-        profileEmail = findViewById(R.id.profile_email);
-        profileImage = findViewById(R.id.profile_image);
-        signOut=findViewById(R.id.buttonSignout);
+        nameprofil = findViewById(R.id.profilname);
+        username = findViewById(R.id.editUsername);
+        emailprofil = findViewById(R.id.profil_email);
+        fotoprofil = findViewById(R.id.profile_image);
+        SignOut = findViewById(R.id.buttonSignout);
 
-        signOut.setOnClickListener(new View.OnClickListener() {
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+
+        mGoogleSignInClient =GoogleSignIn.getClient(this,gso);
+
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(Profil.this);
+        if(acct !=null){
+            String personName = acct.getDisplayName();
+            String personGivenName = acct.getGivenName();
+            String personFamilyName = acct.getFamilyName();
+            String personEmail = acct.getEmail();
+            String personId = acct.getId();
+            Uri personPhoto = acct.getPhotoUrl();
+
+            nameprofil.setText("Nama: " + personName);
+            emailprofil.setText("Email: " + personEmail);
+            username.setText("ID: " + personId);
+            Glide.with(this).load(personPhoto).into(fotoprofil);
+        }//if
+
+        SignOut.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick (View view){
+                sign_Out();
+            }//onClick
+        });//setOnClick
 
-                googleSignInClient.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+    }
+
+    private void sign_Out() {
+        mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        Intent intent=new Intent(Profil.this,MainActivity.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent);
+                        Toast.makeText(Profil.this,"Berhasil Keluar",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(Profil.this, Login.class));
+                        finish();
                     }
                 });
-            }
-        });
-    }
-
-    private void setDataOnView() {
-        GoogleSignInAccount googleSignInAccount = getIntent().getParcelableExtra(GOOGLE_ACCOUNT);
-        //Picasso.get().load(googleSignInAccount.getPhotoUrl()).centerInside().fit().into(profileImage);
-        profileName.setText(googleSignInAccount.getDisplayName());
-        profileEmail.setText(googleSignInAccount.getEmail());
-    }
-
-
+    }//sign_out
 
 
 }

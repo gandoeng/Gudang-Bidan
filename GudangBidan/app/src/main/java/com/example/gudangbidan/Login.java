@@ -26,9 +26,10 @@ public class Login extends AppCompatActivity {
     TextView mTextViewRegister;
     DatabaseHelper db;
     private static final String TAG = "AndroidClarified";
-    private GoogleSignInClient googleSignInClient;
+    private GoogleSignInClient mGoogleSignInClient;
     ImageButton googleSignInButton;
     private GoogleSignInAccount googleSignInAccount;
+    int RC_SIGN_IN = 0;
 
 
     @Override
@@ -71,23 +72,59 @@ public class Login extends AppCompatActivity {
 
         googleSignInButton = findViewById(R.id.imagebuttonGoogle);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getResources().getString(R.string.idToken))
+                .requestEmail()
                 .build();
-        googleSignInClient = GoogleSignIn.getClient(this, gso);
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
         googleSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent signInIntent = googleSignInClient.getSignInIntent();
-                signInIntent.putExtra(Profil.GOOGLE_ACCOUNT, googleSignInAccount);
-                startActivityForResult(signInIntent, 101);
+            public void onClick(View view) {
+                signIn();
             }
         });//onClick
 
-
-
     }//onCreate
 
+    private void signIn() {
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == RC_SIGN_IN) {
+
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            handleSignInResult(task);
+        }
+    }
+
+    private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+        try {
+            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+            // Signed in successfully, show authenticated UI.
+            startActivity(new Intent(Login.this, BerandaLogin.class));
+        } catch (ApiException e) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.w("Google Sign In Error", "signInResult:failed code=" + e.getStatusCode());
+            Toast.makeText(Login.this, "Failed", Toast.LENGTH_LONG).show();
+        }
+    }
+
     @Override
+    protected void onStart() {
+        // Check for existing Google Sign In account, if the user is already signed in
+        // the GoogleSignInAccount will be non-null.
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        if(account != null) {
+            startActivity(new Intent(Login.this, BerandaLogin.class));
+        }
+        super.onStart();
+    }
+
+    /*@Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == Activity.RESULT_OK)
@@ -122,7 +159,7 @@ public class Login extends AppCompatActivity {
         } else {
             Log.d(TAG, "Belum Masuk");
         }
-    }
+    }*/
 
 
 

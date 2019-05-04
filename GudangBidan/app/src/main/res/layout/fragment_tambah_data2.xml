@@ -82,6 +82,7 @@
                     android:ems="10"
                     android:clickable="true"
                     android:editable="false"
+                    android:focusable="false"
                     android:hint="@string/hint_tanggal"
                     android:textSize="@dimen/text_size2"
                     android:inputType="none"/>

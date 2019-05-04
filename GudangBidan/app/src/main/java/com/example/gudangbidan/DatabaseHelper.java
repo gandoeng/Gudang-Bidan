@@ -45,7 +45,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(
                 "CREATE TABLE " + pasien +
                 "(" + id_pasien + " INTEGER PRIMARY KEY," + nama + " TEXT," + tanggal_lahir +
-                        " TEXT" + ");"
+                        " DATE" + ");"
         );
 
         //create table penyakit

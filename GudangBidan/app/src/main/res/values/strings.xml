@@ -4,7 +4,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="hint_namaPasien">Ketikkan nama disini</string>
-    <string name="hint_tanggal">Ketikkan tanggal lahir disini (DD-MM-YYY)</string>
+    <string name="hint_tanggal">Ketikkan tanggal lahir disini</string>
     <string name="hint_umur">Ketikkan umur disini</string>
     <string name="text_tambahData">Tambah</string>
     <string name="text_noRegristrasi">No. Reg</string>

@@ -16,6 +16,7 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.g
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e91e7eb3dbf9610a2fb89ad74956a2c5\AndroidManifest.xml:17:1-22:12
 MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\keyboardvisibilityevent-2.1.0.aar\ff5afd39a0d7ee3065c49e7487b91092\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\4dc1d6f0be2bf614ae3153b8d9a51c78\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\239aa2d7aa1f343968ae3e2a8bfd4b08\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fc9b0eea95736f0fe9a907afbd26d3c7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\4c799ad0aea490b6253787739c395fec\AndroidManifest.xml:17:1-22:12
@@ -25,6 +26,7 @@ MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Arum\.
 MERGED from [com.android.support:transition:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\6a3b2e8bb4ebab49c0f230e4a66a3b11\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9cedc124d1269d216ef38d2c1823f76f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\78ed49cbcd14df1965cf655b73d9d68a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\fcd0a0c8ba1ee9b75714aca99f2fea2c\AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c37caadfb03ecba9260752317aee9ae7\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6c831824c93764e479ba8da1b0070e60\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c4625b15fd1619cad179bf0e09281ec6\AndroidManifest.xml:17:1-22:12
@@ -66,6 +68,10 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.g
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\e013696f59c59447784eaf613a22e00c\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d3afef15f42cc91852acae8ce69c6442\AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\4dc1d6f0be2bf614ae3153b8d9a51c78\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\4dc1d6f0be2bf614ae3153b8d9a51c78\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\fcd0a0c8ba1ee9b75714aca99f2fea2c\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\fcd0a0c8ba1ee9b75714aca99f2fea2c\AndroidManifest.xml:9:5-20
 	android:supportsRtl
 		ADDED from C:\Users\Arum\AndroidStudioProjects\Gudang-Bidan\GudangBidan\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
@@ -176,6 +182,8 @@ MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Arum\.gradle\caches
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e91e7eb3dbf9610a2fb89ad74956a2c5\AndroidManifest.xml:20:5-44
 MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\keyboardvisibilityevent-2.1.0.aar\ff5afd39a0d7ee3065c49e7487b91092\AndroidManifest.xml:8:5-10:41
 MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\keyboardvisibilityevent-2.1.0.aar\ff5afd39a0d7ee3065c49e7487b91092\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\4dc1d6f0be2bf614ae3153b8d9a51c78\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\4dc1d6f0be2bf614ae3153b8d9a51c78\AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\239aa2d7aa1f343968ae3e2a8bfd4b08\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\239aa2d7aa1f343968ae3e2a8bfd4b08\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fc9b0eea95736f0fe9a907afbd26d3c7\AndroidManifest.xml:20:5-44
@@ -194,6 +202,8 @@ MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Arum\.gra
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9cedc124d1269d216ef38d2c1823f76f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\78ed49cbcd14df1965cf655b73d9d68a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\78ed49cbcd14df1965cf655b73d9d68a\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\fcd0a0c8ba1ee9b75714aca99f2fea2c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\fcd0a0c8ba1ee9b75714aca99f2fea2c\AndroidManifest.xml:5:5-7:41
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c37caadfb03ecba9260752317aee9ae7\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c37caadfb03ecba9260752317aee9ae7\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Arum\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6c831824c93764e479ba8da1b0070e60\AndroidManifest.xml:20:5-44

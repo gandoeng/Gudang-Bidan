@@ -53,6 +53,16 @@ public class BerandaLogin extends AppCompatActivity {
                         startActivity(pasien);
                     }
                 });
+            } else if (i == 3) {
+                // karena child adalah cardview maka panggil cardview
+                CardView cardView = (CardView) mainGrid.getChildAt(i);
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent pasien = new Intent(BerandaLogin.this, Profil.class);
+                        startActivity(pasien);
+                    }
+                });
             }
         }
     }

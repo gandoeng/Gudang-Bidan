@@ -970,6 +970,7 @@ id forever
 id fram
 id frameLayout
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id groups
 id home
@@ -1018,9 +1019,9 @@ id parent_matrix
 id pengaturan
 id percent
 id pin
-id profile_email
+id profil_email
 id profile_image
-id profile_text
+id profilname
 id progress_circular
 id progress_horizontal
 id radio

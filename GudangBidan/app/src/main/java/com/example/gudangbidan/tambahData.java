@@ -33,9 +33,8 @@ public class tambahData extends Fragment {
     penyakit t;
 
     //mendeklarasikan textPlan dan btn
-    EditText editNama,editTanggalLahir,editUmur,editIdPasien,editKeluhan,editDiagnosa;
+    EditText editNama,editTanggalLahir,editIdPasien,editKeluhan,editDiagnosa;
     Button btnSubmitPasien;
-    Spinner pilih;
 
     public tambahData() {
         // Required empty public constructor
@@ -57,6 +56,7 @@ public class tambahData extends Fragment {
         editKeluhan = view.findViewById(R.id.editKeluhan);
         editDiagnosa = view.findViewById(R.id.editDiagnosa);
         btnSubmitPasien = view.findViewById(R.id.btnSubmitPasien);
+
 
         //Datepicker
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
@@ -112,26 +112,39 @@ public class tambahData extends Fragment {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //mendeklarasikan insertDataPasien
-                        boolean insertDataPasien = myDB.insertDataPasien(tambahDataPasien());
 
-                        //mendeklarasikan inserDataPenyakit
-                        boolean insertDataPenyakit = myDB.insertDataPenyakit(tambahDataPenyakit());
-
-                        /* jika data berhasil ditambahkan maka akan muncul toast data tersimpan
-                            sedangkan jika data belum ditambahkan maka akan muncul toast gagal
-                         */
-
-                        if(insertDataPasien == true && insertDataPenyakit == true){
-                            Toast.makeText(getActivity(),"Tesimpan",Toast.LENGTH_LONG).show();
-                            editNama.getText().clear();
-                            editTanggalLahir.getText().clear();
-                            editUmur.getText().clear();
-                            editIdPasien.getText().clear();
-                            editKeluhan.getText().clear();
-                            editDiagnosa.getText().clear();
+                        if(editIdPasien.getText().toString().length() == 0){
+                            editIdPasien.setError("Wajib diisi");
+                        } else if(editNama.getText().toString().length() == 0){
+                            editNama.setError("Wajib diisi");
+                        } else if(editTanggalLahir.getText().toString().length() == 0){
+                            editTanggalLahir.setError("Wajib diisi");
+                        } else if(editKeluhan.getText().toString().length() == 0){
+                            editKeluhan.setError("Wajib diisi");
+                        } else if(editDiagnosa.getText().toString().length() == 0){
+                            editDiagnosa.setError("Wajib diisi");
                         } else {
-                            Toast.makeText(getActivity(),"Gagal",Toast.LENGTH_LONG).show();
+                            //mendeklarasikan insertDataPasien
+                            boolean insertDataPasien = myDB.insertDataPasien(tambahDataPasien());
+
+                            //mendeklarasikan inserDataPenyakit
+                            boolean insertDataPenyakit = myDB.insertDataPenyakit(tambahDataPenyakit());
+
+                             /* jika data berhasil ditambahkan maka akan muncul toast data tersimpan
+                                sedangkan jika data belum ditambahkan maka akan muncul toast gagal
+                            */
+
+                            if (insertDataPasien == true && insertDataPenyakit == true) {
+                                Toast.makeText(getActivity(), "Tesimpan", Toast.LENGTH_LONG).show();
+                                editNama.getText().clear();
+                                editTanggalLahir.getText().clear();
+                                editIdPasien.getText().clear();
+                                editKeluhan.getText().clear();
+                                editDiagnosa.getText().clear();
+                            } else {
+                                Toast.makeText(getActivity(), "Gagal", Toast.LENGTH_LONG).show();
+                            }
+
                         }
 
                     }

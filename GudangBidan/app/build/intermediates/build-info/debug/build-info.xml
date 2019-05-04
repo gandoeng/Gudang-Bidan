@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.3.1"
-    timestamp="1556951023858"
+    timestamp="1556952589750"
     token="906637879327845118"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,37 +29,19 @@
 
     <build
         build-mode="FULL"
-        timestamp="1556950650987"
+        timestamp="1556951946474"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -68,13 +50,31 @@
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1556950945900"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1556952498954"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -82,7 +82,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1556951023858"
+        timestamp="1556952589750"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"

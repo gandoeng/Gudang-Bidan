@@ -8,7 +8,7 @@
     <string name="hint_umur">Ketikkan umur disini</string>
     <string name="text_tambahData">Tambah</string>
     <string name="text_noRegristrasi">No. Reg</string>
-    <string name="hint_regristrasi">Ketikkan nomor regristasi pasien disini</string>
+    <string name="hint_regristrasi">Ketikkan no. regristasi disini</string>
     <string name="text_nama">Nama</string>
     <string name="text_tanggalLahir">Tanggal Lahir</string>
     <string name="text_umur">Umur</string>

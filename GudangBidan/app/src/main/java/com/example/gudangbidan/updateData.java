@@ -34,13 +34,6 @@ public class updateData extends Fragment {
         // Required empty public constructor
     }
 
-    //membuat navbar atas
-    public void onCreateOptionsMenu(Menu menu, MenuInflater getMenuInflater){
-        //membaca file menu
-        getMenuInflater.inflate(R.menu.menu, menu);
-        super.onCreateOptionsMenu(menu,getMenuInflater);
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -89,24 +82,33 @@ public class updateData extends Fragment {
                     @Override
                     public void onClick(View v) {
 
-                        if (tambahPenyakit() == null){
-                            Toast.makeText(getActivity(),"Id Pasien tidak ditemukan",
-                                    Toast.LENGTH_LONG).show();
+                        if(idPasien.getText().toString().length() == 0){
+                            idPasien.setError("Wajib Diisi");
+                        } else if(keluhan.getText().toString().length() == 0){
+                            keluhan.setError("Wajib Diisi");
+                        }if(diagnosa.getText().toString().length() == 0){
+                            diagnosa.setError("Wajib Diisi");
                         } else {
-                            //menyimpan data ke dalam tabel penyakit
-                            boolean insertDataPenyakit = myDB.insertDataPenyakit(tambahPenyakit());
-
-                            //cek apakah berhasil ditambahkan atau tidak
-                            if(insertDataPenyakit == true){
-                                Toast.makeText(getActivity(),"Tersimpan",
+                            if (tambahPenyakit() == null) {
+                                Toast.makeText(getActivity(), "Id Pasien tidak ditemukan",
                                         Toast.LENGTH_LONG).show();
-                                idPasien.getText().clear();
-                                keluhan.getText().clear();
-                                diagnosa.getText().clear();
                             } else {
-                                Toast.makeText(getActivity(),"Gagal",
-                                        Toast.LENGTH_LONG).show();
+                                //menyimpan data ke dalam tabel penyakit
+                                boolean insertDataPenyakit = myDB.insertDataPenyakit(tambahPenyakit());
+
+                                //cek apakah berhasil ditambahkan atau tidak
+                                if (insertDataPenyakit == true) {
+                                    Toast.makeText(getActivity(), "Tersimpan",
+                                            Toast.LENGTH_LONG).show();
+                                    idPasien.getText().clear();
+                                    keluhan.getText().clear();
+                                    diagnosa.getText().clear();
+                                } else {
+                                    Toast.makeText(getActivity(), "Gagal",
+                                            Toast.LENGTH_LONG).show();
+                                }
                             }
+
                         }
 
                     }

@@ -808,6 +808,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_dashboard_black_24dp
+drawable ic_data
 drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1195,6 +1196,7 @@ string text_tambahData
 string text_tanggalLahir
 string text_umur
 string title_dashboard
+string title_data
 string title_home
 string title_notifications
 string title_pasien

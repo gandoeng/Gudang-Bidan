@@ -5,46 +5,28 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.3.1"
-    timestamp="1556957721651"
+    timestamp="1556958471512"
     token="906637879327845118"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="228" />
+        duration="466" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="128" />
+        duration="68" />
     <task
         name="verifier"
-        duration="36" />
+        duration="5" />
 
-    <artifact
-        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
     <artifact
         location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
-    <artifact
-        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -121,13 +103,19 @@
         timestamp="1556957721651"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1556957965076"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -135,12 +123,23 @@
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1556958039463"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1556958471512"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

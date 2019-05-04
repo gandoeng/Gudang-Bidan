@@ -24,5 +24,6 @@
     <string name="text_simpanData">Simpan</string>
     <string name="text_status">Status</string>
     <string name="title_pengaturan">Pengaturan</string>
+    <string name="title_data">Data</string>
 
 </resources>

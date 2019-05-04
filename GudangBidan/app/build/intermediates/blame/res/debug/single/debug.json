@@ -612,6 +612,10 @@
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable_ic_data.xml.flat",
+        "source": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/src/main/res/drawable/ic_data.xml"
+    },
+    {
         "merged": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },

@@ -23,6 +23,7 @@ public class beranda extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        getActivity().setTitle("Data");
         return inflater.inflate(R.layout.fragment_beranda, container, false);
     }
 

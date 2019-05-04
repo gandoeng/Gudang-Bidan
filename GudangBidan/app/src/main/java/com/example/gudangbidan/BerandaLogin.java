@@ -29,18 +29,27 @@ public class BerandaLogin extends AppCompatActivity {
             /*
                 imunisasi index ke-0
                 pasien umum index ke-1
-                data index ke-2
+                keluar index ke-2
                 pengaturan index ke-3
              */
 
             if(i == 1) {
                 // karena child adalah cardview maka panggil cardview
                 CardView cardView = (CardView) mainGrid.getChildAt(i);
-                final int I = i;
                 cardView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent pasien = new Intent(BerandaLogin.this, MainActivity.class);
+                        startActivity(pasien);
+                    }
+                });
+            } else if (i == 2){
+                // karena child adalah cardview maka panggil cardview
+                CardView cardView = (CardView) mainGrid.getChildAt(i);
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent pasien = new Intent(BerandaLogin.this, Login.class);
                         startActivity(pasien);
                     }
                 });

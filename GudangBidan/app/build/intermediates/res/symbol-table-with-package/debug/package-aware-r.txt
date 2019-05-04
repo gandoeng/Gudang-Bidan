@@ -819,6 +819,7 @@ drawable ic_person_black_24dp
 drawable ic_tambah
 drawable ic_tambah2
 drawable imunisasi
+drawable keluar
 drawable konsultasi
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -945,6 +946,7 @@ id line3
 id linearLayout1
 id listMode
 id list_item
+id mainGrid
 id masked
 id media_actions
 id message
@@ -1090,6 +1092,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_beranda_login
 layout activity_login
 layout activity_main
 layout activity_splas_screen

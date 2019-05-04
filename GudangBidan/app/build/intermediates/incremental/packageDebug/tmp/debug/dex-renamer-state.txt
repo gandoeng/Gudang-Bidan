@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-#Mon Apr 29 15:13:40 WIB 2019
-=======
-#Fri May 03 08:55:46 ICT 2019
-base.0=C\:\\Users\\Arum\\AndroidStudioProjects\\Gudang-Bidan\\GudangBidan\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
->>>>>>> master
+#Sat May 04 12:58:22 WIB 2019
+base.0=/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\Arum\\AndroidStudioProjects\\Gudang-Bidan\\GudangBidan\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+base.1=/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/dex/debug/mergeExtDexDebug/out

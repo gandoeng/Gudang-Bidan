@@ -80,26 +80,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:clickable="true"
+                    android:editable="false"
                     android:hint="@string/hint_tanggal"
-                    android:inputType="date"
-                    android:textSize="@dimen/text_size2" />
-
-                <TextView
-                    android:id="@+id/textUmur"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_umur"
                     android:textSize="@dimen/text_size2"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/editUmur"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="@string/hint_umur"
-                    android:inputType="number"
-                    android:textSize="@dimen/text_size2" />
+                    android:inputType="none"/>
 
                 <TextView
                     android:id="@+id/textKeluhan"

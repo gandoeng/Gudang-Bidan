@@ -807,11 +807,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-<<<<<<< HEAD
-drawable gendong
-=======
-drawable flashscreen
->>>>>>> master
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
@@ -819,11 +814,8 @@ drawable ic_launcher_foreground
 drawable ic_lock_black_24dp
 drawable ic_notifications_black_24dp
 drawable ic_pasien
-<<<<<<< HEAD
 drawable ic_pengaturan
-=======
 drawable ic_person_black_24dp
->>>>>>> master
 drawable ic_tambah
 drawable ic_tambah2
 drawable imunisasi
@@ -841,12 +833,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-<<<<<<< HEAD
 drawable rekam_medis
-=======
 drawable shapelogin
 drawable shapeusername
->>>>>>> master
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -920,7 +909,6 @@ id editKeluhan
 id editNama
 id editPassword
 id editTanggalLahir
-id editUmur
 id editUsername
 id edit_query
 id end
@@ -1041,7 +1029,6 @@ id textRegrister
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textTanggalLahir
-id textUmur
 id textView
 id text_input_password_toggle
 id textinput_counter

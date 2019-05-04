@@ -43,7 +43,6 @@ public class tambahData extends Fragment {
 
         editNama = view.findViewById(R.id.editNama);
         editTanggalLahir = view.findViewById(R.id.editTanggalLahir);
-        editUmur = view.findViewById(R.id.editUmur);
         editIdPasien = view.findViewById(R.id.editIdPasien);
         editKeluhan = view.findViewById(R.id.editKeluhan);
         editDiagnosa = view.findViewById(R.id.editDiagnosa);
@@ -63,7 +62,6 @@ public class tambahData extends Fragment {
         p.setIdPasien(Integer.parseInt(String.valueOf(editIdPasien.getText())));
         p.setNama(editNama.getText().toString());
         p.setTanggal_lahir(editTanggalLahir.getText().toString());
-        p.setUmur(Integer.parseInt(String.valueOf(editUmur.getText())));
         return p;
     }
 

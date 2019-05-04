@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Arum\\AndroidStudioProjects\\Gudang-Bidan\\GudangBidan\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Arum\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\5cad439c02bd47f0916da86e57dde3ad\\res\\values-v17\\values-v17.xml",
+                    "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -20,7 +20,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String id_pasien = "id_pasien";
     public static final String nama = "nama";
     public static final String tanggal_lahir = "tanggal_lahir";
-    public static final String umur = "umur";
+
 
     //Deklarasi tabel penyakit
     public static final String penyakit = "penyakit";
@@ -45,7 +45,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(
                 "CREATE TABLE " + pasien +
                 "(" + id_pasien + " INTEGER PRIMARY KEY," + nama + " TEXT," + tanggal_lahir +
-                        " TEXT,"+umur+" INTEGER" + ");"
+                        " TEXT" + ");"
         );
 
         //create table penyakit
@@ -85,7 +85,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(this.id_pasien,n.getId());
         contentValues.put(this.nama, n.getNama());
         contentValues.put(this.tanggal_lahir, n.getTanggal_lahir());
-        contentValues.put(this.umur, n.getUmur());
 
         long result = db.insert(pasien, null, contentValues);
 

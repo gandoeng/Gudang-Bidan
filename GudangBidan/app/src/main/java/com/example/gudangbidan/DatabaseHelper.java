@@ -30,7 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String keluhan = "keluhan";
     public static final String id_pasien2 = "id_pasien2";
 
-    //Deklarasi tabel penyakit
+    //Deklarasi tabel user
     public static final String user = "user";
 
     //Deklarasi kolom tabel user
@@ -41,7 +41,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //Setiap method ini dipanggil maka database akan terbentuk
     public DatabaseHelper(@Nullable Context context) {
-        super(context, DATABASE_NAME, null, 1);
+        super(context, DATABASE_NAME, null, 2);
     }
 
 
@@ -60,13 +60,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(
                 "CREATE TABLE " + penyakit +
                 "(" + id_pasien2 + " INTEGER," + keluhan + " TEXT," + diagnosa + " TEXT," +
-                        "FOREIGN KEY ("+ id_pasien2 + ") REFERENCES " + pasien + "(" + id_pasien + ") );"
+                        "FOREIGN KEY ("+ id_pasien2 + ") REFERENCES " + pasien + "(" + id_pasien
+                        + ") );"
         );
 
         //create table user
         db.execSQL(
                 "CREATE TABLE " + user +
-                        "(" + id_user + " INTEGER PRIMARY KEY AUTOINCREMENT," + username + " TEXT," + password + " TEXT" + " );"
+                        "(" + id_user + " INTEGER PRIMARY KEY AUTOINCREMENT," + username + " TEXT,"
+                        + password + " TEXT" + " );"
         );
     }
 
@@ -163,14 +165,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // ---------------------------------------------- Methode tabel user --------------------------------------------- //
 
 
-    public long addUser(String usernm, String pass){
+    public boolean addUser(String usernm, String pass){
         SQLiteDatabase db = this.getWritableDatabase();
+
         ContentValues contentValues = new ContentValues();
-        contentValues.put("username",usernm);
-        contentValues.put("password",pass);
-        long res = db.insert(user,null,contentValues);
-        db.close();
-        return  res;
+
+        contentValues.put(this.username,usernm);
+        contentValues.put(this.password,pass);
+
+        long result = db.insert(user,null,contentValues);
+
+        if(result == -1)
+            return false;
+        else
+            return true;
     }
 
     public boolean checkUser(String usernm, String pass){

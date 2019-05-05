@@ -55,17 +55,20 @@ public class Login extends AppCompatActivity {
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String usernm = mTextUsername.getText().toString().trim();
-                String pwd = mTextPassword.getText().toString().trim();
-                Boolean res = db.checkUser(usernm, pwd);
-                if(res == true)
-                {
-                    Intent LoginIntent = new Intent(Login.this,BerandaLogin.class);
-                    startActivity(LoginIntent);
-                }
-                else
-                {
-                    Toast.makeText(Login.this,"Gagal Masuk",Toast.LENGTH_SHORT).show();
+                if(mTextUsername.getText().toString().length() == 0){
+                    mTextUsername.setError("Username belum diisi");
+                } else if(mTextPassword.getText().toString().length() == 0){
+                    mTextPassword.setError("Password belum diisi");
+                } else {
+                    String usernm = mTextUsername.getText().toString().trim();
+                    String pwd = mTextPassword.getText().toString().trim();
+                    Boolean res = db.checkUser(usernm, pwd);
+                    if (res == true) {
+                        Intent LoginIntent = new Intent(Login.this, BerandaLogin.class);
+                        startActivity(LoginIntent);
+                    } else {
+                        Toast.makeText(Login.this, "Gagal Masuk", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });//onClick

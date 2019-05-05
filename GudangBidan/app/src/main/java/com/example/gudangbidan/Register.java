@@ -39,24 +39,30 @@ public class Register extends AppCompatActivity {
         mButtonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String user = mTextUsername.getText().toString().trim();
+                String user = mTextUsername.getText().toString();
                 String pwd = mTextPassword.getText().toString().trim();
                 String cnf_pwd = mTextCnfPassword.getText().toString().trim();
 
-                if(pwd.equals(cnf_pwd)){
-                    long val = db.addUser(user,pwd);
-                    if(val > 0){
-                        Toast.makeText(Register.this,"Berhasil Mendaftar",Toast.LENGTH_SHORT).show();
-                        Intent moveToLogin = new Intent(Register.this,Login.class);
-                        startActivity(moveToLogin);
-                    }
-                    else{
-                        Toast.makeText(Register.this,"Gagal Mendaftar",Toast.LENGTH_SHORT).show();
-                    }
+                if(mTextUsername.getText().toString().length() == 0){
+                    mTextUsername.setError("Nama harus diisi");
+                } else if (mTextPassword.getText().toString().length() == 0){
+                    mTextPassword.setError("Password harus diisi");
+                } else if (mTextCnfPassword.getText().toString().length() == 0){
+                    mTextCnfPassword.setError("Verifikasi Pasword");
+                } else {
+                    if (pwd.equals(cnf_pwd)) {
+                        boolean val = db.addUser(user, mTextPassword.getText().toString());
+                        if (val == true) {
+                            Toast.makeText(Register.this, "Berhasil Mendaftar", Toast.LENGTH_SHORT).show();
+                            Intent moveToLogin = new Intent(Register.this, Login.class);
+                            startActivity(moveToLogin);
+                        } else {
+                            Toast.makeText(Register.this, "Gagal Mendaftar", Toast.LENGTH_SHORT).show();
+                        }
 
-                }
-                else{
-                    Toast.makeText(Register.this,"Kata Sandi Tidak Sama", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(Register.this, "Kata Sandi Tidak Sama", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });

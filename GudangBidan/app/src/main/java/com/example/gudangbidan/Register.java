@@ -39,6 +39,10 @@ public class Register extends AppCompatActivity {
         mButtonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String user = mTextUsername.getText().toString();
+                String pwd = mTextPassword.getText().toString().trim();
+                String cnf_pwd = mTextCnfPassword.getText().toString().trim();
+
                 if(mTextUsername.getText().toString().length() == 0){
                     mTextUsername.setError("Nama harus diisi");
                 } else if (mTextPassword.getText().toString().length() == 0){
@@ -46,13 +50,9 @@ public class Register extends AppCompatActivity {
                 } else if (mTextCnfPassword.getText().toString().length() == 0){
                     mTextCnfPassword.setError("Verifikasi Pasword");
                 } else {
-                    String user = mTextUsername.getText().toString().trim();
-                    String pwd = mTextPassword.getText().toString().trim();
-                    String cnf_pwd = mTextCnfPassword.getText().toString().trim();
-
                     if (pwd.equals(cnf_pwd)) {
-                        long val = db.addUser(user, pwd);
-                        if (val > 0) {
+                        boolean val = db.addUser(user, mTextPassword.getText().toString());
+                        if (val == true) {
                             Toast.makeText(Register.this, "Berhasil Mendaftar", Toast.LENGTH_SHORT).show();
                             Intent moveToLogin = new Intent(Register.this, Login.class);
                             startActivity(moveToLogin);

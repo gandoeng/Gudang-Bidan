@@ -26,6 +26,11 @@
     <string name="title_pengaturan">Pengaturan</string>
     <string name="title_data">Data</string>
 
+    <!-- punya arum
     <string name="idToken">487349850114-b3je2g3k8d5otqk6ae2bj0m3fqqlu019.apps.googleusercontent.com</string>
+    -->
+
+    <!-- punya gandung -->
+    <string name="idToken">321488850977-c3r1rplougotqgno3tsdb3u4tdm8g1ba.apps.googleusercontent.com</string>
 
 </resources>

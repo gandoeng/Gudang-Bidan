@@ -27,7 +27,6 @@ public class Profil extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
     Button SignOut;
     TextView nameprofil;
-    EditText username;
     TextView emailprofil;
     ImageView fotoprofil;
 
@@ -36,7 +35,6 @@ public class Profil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
         nameprofil = findViewById(R.id.profilname);
-        username = findViewById(R.id.editUsername);
         emailprofil = findViewById(R.id.profil_email);
         fotoprofil = findViewById(R.id.profile_image);
         SignOut = findViewById(R.id.buttonSignout);
@@ -50,15 +48,11 @@ public class Profil extends AppCompatActivity {
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(Profil.this);
         if(acct !=null){
             String personName = acct.getDisplayName();
-            String personGivenName = acct.getGivenName();
-            String personFamilyName = acct.getFamilyName();
             String personEmail = acct.getEmail();
-            String personId = acct.getId();
             Uri personPhoto = acct.getPhotoUrl();
 
             nameprofil.setText("Nama: " + personName);
             emailprofil.setText("Email: " + personEmail);
-            username.setText("ID: " + personId);
             Glide.with(this).load(personPhoto).into(fotoprofil);
         }//if
 

@@ -992,6 +992,7 @@ id line1
 id line3
 id linearLayout1
 id listMode
+id listP
 id list_item
 id mainGrid
 id masked
@@ -1099,6 +1100,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txt_resultadapter
 id uniform
 id up
 id useLogo
@@ -1169,6 +1171,7 @@ layout design_text_input_password_icon
 layout fragment_beranda
 layout fragment_tambah_data2
 layout fragment_update_data
+layout listdata
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

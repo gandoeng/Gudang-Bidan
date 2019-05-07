@@ -8,6 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+import com.example.gudangbidan.pasien;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
     //Deklarasi nama database
     public static final String DATABASE_NAME = "gudangBidan.db";
@@ -114,6 +118,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
+    public List<pasien> getNamaPasien(){
+        List<pasien> listPasien = new ArrayList<>();
+
+        String selectQuery = "SELECT * FROM "+ pasien;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do{
+                pasien pas = new pasien(cursor.getString(1));
+                listPasien.add(pas);
+            } while (cursor.moveToNext());
+        }
+
+        return  listPasien;
+    }
+
+    //tampilkan semua data pasien
+
 
     // ---------------------------------------------- Methode tabel penyakit --------------------------------------------- //
 

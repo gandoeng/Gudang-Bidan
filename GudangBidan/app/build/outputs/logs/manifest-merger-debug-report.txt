@@ -17,9 +17,9 @@ MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/macboo
 MERGED from [com.android.support:support-v4:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/1a5fb17ff6a7048e4c4382946288acd8/AndroidManifest.xml:17:1-22:12
 MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4caefbe5f9b78337cb769d89223c179f/AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/b0fdb8a2b8292d936dd5d62ca808f880/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ecd86d2fc586a57d4cc0a9d1bed86618/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/bedbf57b03845b5e4d35bdfb11fe7d34/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7c7282b98c5679a6601a3a85a4b73ae7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ecd86d2fc586a57d4cc0a9d1bed86618/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/c1940466583b2dad4f49b19033c72e85/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/753910aeddaf33d7f8b782b2582d927a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4160193d8359282a218060f80b816162/AndroidManifest.xml:17:1-22:12
@@ -184,12 +184,12 @@ MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0
 MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4caefbe5f9b78337cb769d89223c179f/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/b0fdb8a2b8292d936dd5d62ca808f880/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/b0fdb8a2b8292d936dd5d62ca808f880/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ecd86d2fc586a57d4cc0a9d1bed86618/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ecd86d2fc586a57d4cc0a9d1bed86618/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/bedbf57b03845b5e4d35bdfb11fe7d34/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/bedbf57b03845b5e4d35bdfb11fe7d34/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7c7282b98c5679a6601a3a85a4b73ae7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7c7282b98c5679a6601a3a85a4b73ae7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ecd86d2fc586a57d4cc0a9d1bed86618/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ecd86d2fc586a57d4cc0a9d1bed86618/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/c1940466583b2dad4f49b19033c72e85/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/c1940466583b2dad4f49b19033c72e85/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/753910aeddaf33d7f8b782b2582d927a/AndroidManifest.xml:20:5-44

@@ -2,12 +2,16 @@ package com.example.gudangbidan;
 
 public class pasien {
     int id_pasien;
-    String nama,tanggal_lahir,status;
+    String nama,tanggal_lahir;
 
 
     //constructor
     public pasien(){
 
+    }
+
+    public pasien(String nama){
+        this.nama = nama;
     }
 
     public pasien (int id_pasien,String nama, String tanggal_lahir, String status) {

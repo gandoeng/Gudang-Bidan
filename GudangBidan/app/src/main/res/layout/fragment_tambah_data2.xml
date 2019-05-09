@@ -87,6 +87,26 @@
                     android:inputType="none"/>
 
                 <TextView
+                    android:id="@+id/textTanggalPeriksa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal_periksa"
+                    android:textSize="@dimen/text_size2"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTanggalPeriksa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/text_tanggalPeriksa"
+                    android:inputType="none"
+                    android:textSize="@dimen/text_size2" />
+
+                <TextView
                     android:id="@+id/textKeluhan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

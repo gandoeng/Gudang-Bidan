@@ -2,6 +2,9 @@ package com.example.gudangbidan;
 
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -65,10 +68,25 @@ public class beranda extends Fragment {
                     new RecyclerItemClickListener(getActivity().getApplicationContext(), new RecyclerItemClickListener.OnItemClickListener() {
                         @Override public void onItemClick(View view, int position) {
                             // TODO Handle item click
-                            pasien p = pasienList.get(position);
-                            String nama = p.getNama();
 
+                            pasien p = pasienList.get(position);
+
+                            //menyimpan id pasien sementara ke dalam session
+                            SharedPreferences mSettings = getActivity().getSharedPreferences("simpan", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = mSettings.edit();
+                            editor.putInt("idPasien",p.getIdPasien());
+                            editor.apply();
+
+                            /*
+                            String nama = p.getNama();
                             Toast.makeText(getActivity(), "Klik di " + nama, Toast.LENGTH_SHORT).show();
+                            */
+
+                            Intent i = new Intent(getActivity(),dataPasien.class);
+
+                            //menghubungkan activity splahscreen ke MainActivity
+                            startActivity(i);
+
                         }
                     })
             );

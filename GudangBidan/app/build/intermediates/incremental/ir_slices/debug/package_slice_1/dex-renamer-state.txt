@@ -1,4 +1,4 @@
-#Tue May 07 22:52:18 WIB 2019
+#Thu May 09 15:21:59 WIB 2019
 base.0=/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/transforms/dexMerger/debug/1
 path.0=classes.dex
 renamed.0=classes.dex

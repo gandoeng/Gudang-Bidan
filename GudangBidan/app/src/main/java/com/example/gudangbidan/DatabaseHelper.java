@@ -30,6 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String penyakit = "penyakit";
 
     //Deklarasi kolom tabel penyakit
+    public static final String tanggal_periksa = "tanggal_periksa";
     public static final String diagnosa = "diagnosa";
     public static final String keluhan = "keluhan";
     public static final String id_pasien2 = "id_pasien2";
@@ -63,7 +64,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         //create table penyakit
         db.execSQL(
                 "CREATE TABLE " + penyakit +
-                "(" + id_pasien2 + " INTEGER," + keluhan + " TEXT," + diagnosa + " TEXT," +
+                "(" + id_pasien2 + " INTEGER," + keluhan + " TEXT," + diagnosa + " TEXT,"+ tanggal_periksa+ " DATE, " +
                         "FOREIGN KEY ("+ id_pasien2 + ") REFERENCES " + pasien + "(" + id_pasien
                         + ") );"
         );
@@ -119,6 +120,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    //tampilkan semua data pasien
     public List<pasien> getNamaPasien(){
         List<pasien> listPasien = new ArrayList<>();
 
@@ -129,7 +131,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()){
             do{
-                pasien pas = new pasien(cursor.getString(1));
+                pasien pas = new pasien(cursor.getInt(0),cursor.getString(1));
                 listPasien.add(pas);
             } while (cursor.moveToNext());
         }
@@ -137,7 +139,41 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return  listPasien;
     }
 
-    //tampilkan semua data pasien
+    //mengambil 1 data pasien
+    public pasien cari(int id){
+        String selectQuery = "SELECT * FROM "+ pasien + " WHERE id_pasien = " + id;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            pasien pas = new pasien(cursor.getInt(0),cursor.getString(1),cursor.getString(2));
+            return pas;
+        } else {
+            return null;
+        }
+
+
+    }
+
+    //update data pasien
+
+    public boolean updatePasien(pasien p){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(this.nama,p.getNama());
+        contentValues.put(this.tanggal_lahir,p.getTanggal_lahir());
+
+        String whereClause = "id=?";
+        String whereArgs[] ={String.valueOf(p.getIdPasien())};
+
+        long result = db.update(pasien, contentValues, whereClause, whereArgs );
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
 
 
     // ---------------------------------------------- Methode tabel penyakit --------------------------------------------- //
@@ -150,6 +186,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(this.id_pasien2, t.getId_pasien());
         contentValues.put(this.diagnosa,t.getDiagnosa());
         contentValues.put(this.keluhan, t.getKeluhan());
+        contentValues.put(this.tanggal_periksa, t.getTanggal_periksa());
 
         long result = db.insert(penyakit, null, contentValues );
 
@@ -168,7 +205,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         //menampilkan pesan error di log jika ada error
         Log.e(LOG, SelectQuery);
-
 
         Cursor c = db.rawQuery(SelectQuery, null);
 

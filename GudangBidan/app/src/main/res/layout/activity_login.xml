@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="152dp"
         android:layout_height="190dp"
-        android:src="@mipmap/gendong" />
+        android:src="@mipmap/hamil" />
 
     <EditText
         android:id="@+id/editUsername"

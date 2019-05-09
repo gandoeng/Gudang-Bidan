@@ -28,6 +28,7 @@ public class pasienAdapter extends RecyclerView.Adapter<pasienAdapter.PasienView
 
     @Override
     public void onBindViewHolder(@NonNull pasienAdapter.PasienViewHolder holder, int position) {
+        holder.textRegister.setText(Integer.toString(pasienList.get(position).getIdPasien()));
         holder.textNama.setText(pasienList.get(position).getNama());
     }
 
@@ -38,10 +39,12 @@ public class pasienAdapter extends RecyclerView.Adapter<pasienAdapter.PasienView
 
     public static class PasienViewHolder extends RecyclerView.ViewHolder{
         TextView textNama;
+        TextView textRegister;
         public PasienViewHolder(View itemView) {
             super(itemView);
 
             textNama = (TextView) itemView.findViewById(R.id.textNama);
+            textRegister = (TextView) itemView.findViewById(R.id.textRegrister);
         }
     }
 

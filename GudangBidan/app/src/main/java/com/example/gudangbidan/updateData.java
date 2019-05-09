@@ -1,5 +1,6 @@
 package com.example.gudangbidan;
 
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,20 +12,28 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 
 public class updateData extends Fragment {
+    //tanggal
+    final Calendar myCalendar = Calendar.getInstance();
 
     //inisialisasi class DatabaseHelper
     DatabaseHelper myDB;
 
     //inisialisasi id dari atribut yang ingin dipanggil
-    EditText idPasien, keluhan, diagnosa;
+    EditText idPasien, keluhan, diagnosa, editTanggalPeriksa;
     Button tambah;
 
     //inisialisasi class penyakit
@@ -51,6 +60,32 @@ public class updateData extends Fragment {
         keluhan = view.findViewById(R.id.editKeluhan);
         diagnosa = view.findViewById(R.id.editDiagnosa);
         tambah = view.findViewById(R.id.btnSubmitPenyakit);
+        editTanggalPeriksa = view.findViewById(R.id.editTanggalPeriksa);
+
+        //Datepicker tanggal periksa
+        final DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, month);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+
+                String myFormat = "yyyy-MM-dd";
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+                editTanggalPeriksa.setText(sdf.format(myCalendar.getTime()));
+
+            }
+        };
+
+        editTanggalPeriksa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new DatePickerDialog(getActivity(), date2, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
 
         //aksi tambah data
         addData();
@@ -65,6 +100,7 @@ public class updateData extends Fragment {
         boolean cek = myDB.cekPasien(t.getId_pasien());
 
         if(cek == true){
+            t.setTanggal_periksa(editTanggalPeriksa.getText().toString());
             t.setKeluhan(keluhan.getText().toString());
             t.setDiagnosa(diagnosa.getText().toString());
             return  t;
@@ -84,6 +120,8 @@ public class updateData extends Fragment {
 
                         if(idPasien.getText().toString().length() == 0){
                             idPasien.setError("Wajib Diisi");
+                        } else if(editTanggalPeriksa.getText().toString().length() == 0){
+                            editTanggalPeriksa.setError("Wajib diisi");
                         } else if(keluhan.getText().toString().length() == 0){
                             keluhan.setError("Wajib Diisi");
                         }if(diagnosa.getText().toString().length() == 0){

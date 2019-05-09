@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         //Membentuk database
         myDB = new DatabaseHelper(this);
 
+
         //tampilan pertama kali
         setTitle("Beranda");
         beranda fragment3 = new beranda();

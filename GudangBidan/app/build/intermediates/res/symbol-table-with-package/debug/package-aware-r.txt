@@ -914,8 +914,10 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnHapusPasien
 id btnSubmitPasien
 id btnSubmitPenyakit
+id btnUpdatePasien
 id buttonLogin
 id buttonPanel
 id buttonSignout
@@ -953,6 +955,7 @@ id editKeluhan
 id editNama
 id editPassword
 id editTanggalLahir
+id editTanggalPeriksa
 id editUsername
 id edit_query
 id end
@@ -1076,12 +1079,16 @@ id tag_transition_group
 id text
 id text2
 id textDiagnosa
+id textIsiDiagnosa
+id textIsiKeluhan
 id textKeluhan
 id textNama
 id textRegrister
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textTanggal
 id textTanggalLahir
+id textTanggalPeriksa
 id textView
 id text_input_password_toggle
 id textinput_counter
@@ -1149,6 +1156,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_beranda_login
+layout activity_data_pasien
 layout activity_login
 layout activity_main
 layout activity_profil
@@ -1172,6 +1180,7 @@ layout fragment_beranda
 layout fragment_tambah_data2
 layout fragment_update_data
 layout listdata
+layout listrekampasien
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1195,6 +1204,7 @@ menu menu
 menu navigation
 mipmap gendong
 mipmap google
+mipmap hamil
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap imunisasi
@@ -1267,7 +1277,9 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string tanggal_periksa
 string text_diagnosa
+string text_hapus
 string text_keluhan
 string text_nama
 string text_noRegristrasi
@@ -1275,7 +1287,9 @@ string text_simpanData
 string text_status
 string text_tambahData
 string text_tanggalLahir
+string text_tanggalPeriksa
 string text_umur
+string text_updateData
 string title_dashboard
 string title_data
 string title_home

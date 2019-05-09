@@ -10,11 +10,12 @@ public class pasien {
 
     }
 
-    public pasien(String nama){
+    public pasien(int id_pasien,String nama){
         this.nama = nama;
+        this.id_pasien = id_pasien;
     }
 
-    public pasien (int id_pasien,String nama, String tanggal_lahir, String status) {
+    public pasien (int id_pasien,String nama, String tanggal_lahir) {
         this.id_pasien = id_pasien;
         this.nama = nama;
         this.tanggal_lahir = tanggal_lahir;

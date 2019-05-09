@@ -4,6 +4,7 @@ public class penyakit {
 
     String diagnosa,keluhan;
     int id_pasien;
+    String tanggal_periksa;
 
     //construktor
     public penyakit(){
@@ -27,6 +28,8 @@ public class penyakit {
 
     public void setId_pasien(int id_pasien){ this.id_pasien = id_pasien; }
 
+    public void setTanggal_periksa(String tanggal_periksa){ this.tanggal_periksa = tanggal_periksa; }
+
     //getter
     public String getDiagnosa(){
         return this.diagnosa;
@@ -37,4 +40,6 @@ public class penyakit {
     }
 
     public int getId_pasien() { return this.id_pasien; }
+
+    public String getTanggal_periksa() { return this.tanggal_periksa; }
 }

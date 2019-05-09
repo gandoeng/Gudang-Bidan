@@ -32,5 +32,9 @@
 
     <!-- punya gandung -->
     <string name="idToken">321488850977-c3r1rplougotqgno3tsdb3u4tdm8g1ba.apps.googleusercontent.com</string>
+    <string name="text_tanggalPeriksa">Ketikkan tanggal periksa disini</string>
+    <string name="tanggal_periksa">Tanggal Periksa</string>
+    <string name="text_updateData">Update</string>
+    <string name="text_hapus">hapus</string>
 
 </resources>

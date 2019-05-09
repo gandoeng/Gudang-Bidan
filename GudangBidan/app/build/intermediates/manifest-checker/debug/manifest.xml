@@ -20,6 +20,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.gudangbidan.dataPasien"
+            android:parentActivityName="com.example.gudangbidan.MainActivity" >
+        </activity>
         <activity android:name="com.example.gudangbidan.Profil" />
         <activity android:name="com.example.gudangbidan.Register" >
             <intent-filter>

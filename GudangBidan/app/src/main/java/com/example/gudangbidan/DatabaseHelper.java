@@ -43,6 +43,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String username = "username";
     public static final String password = "password";
 
+    //Deklarasi tabel bayi
+    public static final String bayi = "bayi";
+
+    //Deklarasi kolom tabel bayi
+    public static final String id_bayi = "id_bayi";
+    public static final String nama_bayi = "nama_bayi";
+    public static final String tgllahir_bayi = "tglLahir_bayi";
+    public static final String namaIbu_bayi = "namaIbu_bayi";
+    public static final String namaAyah_bayi = "namaAyah_bayi";
+
+    //Deklarasi tabel imunisasi
+    public static final String imunisasi = "imunisasi";
+
+    //Deklarasi kolom tabel imunisasi
+    public static final String tanggal_imunisasi = "tanggal_imunisasi";
+    public static final String jenis_imunisasi = "jenis_imunisasi";
+    public static final String id_bayi2 = "id_bayi2";
+
 
     //Setiap method ini dipanggil maka database akan terbentuk
     public DatabaseHelper(@Nullable Context context) {
@@ -75,6 +93,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         "(" + id_user + " INTEGER PRIMARY KEY AUTOINCREMENT," + username + " TEXT,"
                         + password + " TEXT" + " );"
         );
+
+        //create table bayi
+        db.execSQL(
+                "CREATE TABLE " + bayi +
+                        "(" + id_bayi + " INTEGER PRIMARY KEY," + nama_bayi + " TEXT," + tgllahir_bayi +
+                        " DATE," + namaIbu_bayi + " TEXT," + namaAyah_bayi + " TEXT" + ");"
+        );
+
+        db.execSQL(
+                "CREATE TABLE " + imunisasi +
+                        "(" + id_bayi2 + " INTEGER," + jenis_imunisasi + " TEXT," + tanggal_imunisasi + " DATE, " +
+                        "FOREIGN KEY ("+ id_bayi2 + ") REFERENCES " + bayi + "(" + id_bayi
+                        + ") );"
+        );
+
+
     }
 
     @Override
@@ -237,6 +271,86 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         long result = db.delete(penyakit,"id_pasien2 = "+p.getId_pasien(),null);
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    // ---------------------------------------------- Methode tabel bayi ----------------------------------------------- //
+
+    //method menambahkan data pada tabel bayi
+    public boolean insertDataBayi (bayi n){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(this.id_bayi,n.getIdBayi());
+        contentValues.put(this.nama_bayi, n.getNamaBayi());
+        contentValues.put(this.namaIbu_bayi, n.getNamaIbu_bayi());
+        contentValues.put(this.namaAyah_bayi, n.getNamaAyah_bayi());
+        contentValues.put(this.tgllahir_bayi, n.getTglLahir_Bayi());
+
+        long result = db.insert(bayi, null, contentValues);
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    // ---------------------------------------------- Methode tabel imunisasi --------------------------------------------- //
+
+    public boolean insertDataImunisasi(imunisasi t){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(this.id_bayi2, t.getId_bayi());
+        contentValues.put(this.tanggal_imunisasi,t.getTgl_imunisasi());
+        contentValues.put(this.jenis_imunisasi, t.getJenis_imunisasi());
+
+        long result = db.insert(imunisasi, null, contentValues );
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    public boolean cekBayi(int p){
+        SQLiteDatabase db = this.getWritableDatabase();
+        int i = 0;
+
+        //kode SQLite
+        String SelectQuery = "SELECT * FROM "+imunisasi+" WHERE "+id_bayi2+" = "+p;
+
+        //menampilkan pesan error di log jika ada error
+        Log.e(LOG, SelectQuery);
+
+        Cursor c = db.rawQuery(SelectQuery, null);
+
+
+        //looping data
+        if(c.moveToFirst()){
+            do{
+                i=1;
+            }while(c.moveToNext());
+        }
+
+        //cek
+        if (i == 1)
+            return true;
+        else
+            return false;
+    }
+
+    //hapus bayi
+    public boolean hapusBayi(bayi p){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        long result = db.delete(bayi,"id_bayi2 = "+p.getIdBayi(),null);
 
         if(result == -1)
             return false;

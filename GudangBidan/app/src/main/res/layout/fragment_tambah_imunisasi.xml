@@ -41,7 +41,7 @@ android:background="@color/colorPrimary">
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editRegImunisasi"
+                android:id="@+id/editIdBayi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -80,7 +80,7 @@ android:background="@color/colorPrimary">
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/hint_namaIbu"
-                android:inputType="textMultiLine|text"
+                android:inputType="textPersonName"
                 android:textSize="@dimen/text_size2" />
 
             <TextView
@@ -97,7 +97,7 @@ android:background="@color/colorPrimary">
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/hint_namaAyah"
-                android:inputType="textMultiLine|text"
+                android:inputType="textPersonName"
                 android:textSize="@dimen/text_size2" />
 
             <TextView
@@ -129,7 +129,7 @@ android:background="@color/colorPrimary">
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTangalImunisasi"
+                android:id="@+id/editTanggalImunisasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -150,7 +150,7 @@ android:background="@color/colorPrimary">
                 android:textStyle="bold" />
 
             <CheckBox
-                android:id="@+id/hepatitisB"
+                android:id="@+id/HB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="HB-0 (0-7 hari)"/>
@@ -211,7 +211,7 @@ android:background="@color/colorPrimary">
                 android:hint="Imunisasi tambahan"/>
 
             <Button
-                android:id="@+id/btnSubmitPasien"
+                android:id="@+id/btnSubmitBayi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="23dp"
@@ -224,7 +224,7 @@ android:background="@color/colorPrimary">
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editDiagnosa"
+                app:layout_constraintTop_toBottomOf="@+id/imunisasiTambahan"
                 app:layout_constraintVertical_bias="0.0" />
 
         </LinearLayout>

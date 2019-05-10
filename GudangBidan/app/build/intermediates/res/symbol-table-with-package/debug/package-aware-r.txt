@@ -883,6 +883,7 @@ id DPT1
 id DPT2
 id DPT3
 id FUNCTION
+id HB
 id IPV
 id META
 id SHIFT
@@ -920,6 +921,7 @@ id beginning
 id blocking
 id bottom
 id btnHapusPasien
+id btnSubmitBayi
 id btnSubmitPasien
 id btnSubmitPenyakit
 id btnUpdatePasien
@@ -956,6 +958,7 @@ id dimensions
 id direct
 id disableHome
 id editDiagnosa
+id editIdBayi
 id editIdPasien
 id editKeluhan
 id editNama
@@ -963,8 +966,8 @@ id editNamaAyah
 id editNamaBayi
 id editNamaIbu
 id editPassword
-id editRegImunisasi
 id editTangalImunisasi
+id editTanggalImunisasi
 id editTanggalLahir
 id editTanggalLahirBayi
 id editTanggalPeriksa
@@ -1205,6 +1208,7 @@ layout fragment_beranda
 layout fragment_tambah_data2
 layout fragment_tambah_imunisasi
 layout fragment_update_data
+layout fragment_update_imunisasi
 layout listdata
 layout listrekampasien
 layout notification_action

@@ -36,5 +36,13 @@
     <string name="tanggal_periksa">Tanggal Periksa</string>
     <string name="text_updateData">Update</string>
     <string name="text_hapus">hapus</string>
+    <string name="no_regImunisasi">No. Reg</string>
+    <string name="hintRegImunisasi">Ketikkan nomor registrasi disini</string>
+    <string name="nama_regImunisasi">Nama Bayi</string>
+    <string name="hint_namaImunisasi">Ketikkan nama bayi disini</string>
+    <string name="hint_namaBayi">Ketikkan nama bayi disini</string>
+    <string name="hint_namaIbu">Ketikkan nama ibu disini</string>
+    <string name="hint_tanggalImunisasi">Ketikkan tanggal imunisasi disini</string>
+    <string name="hint_namaAyah">Ketikkan nama ayah disini</string>
 
 </resources>

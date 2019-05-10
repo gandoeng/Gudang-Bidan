@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
+            "outputFile": "C:\\Users\\Arum\\AndroidStudioProjects\\Gudang-Bidan\\GudangBidan\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
             "map": [
                 {
-                    "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/values-ky/values-ky.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,1862",
-                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
-                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,1938"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,4562",
-                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
-                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,4638"
-                    }
-                },
-                {
-                    "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3ca91d1c15dfd2ee917f770a89642b6c/res/values-ky/values-ky.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4643",
-                        "endColumns": "100",
-                        "endOffsets": "4739"
-                    }
-                },
-                {
-                    "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/c707ccc767975dff2885601a61545357/res/values-ky/values.xml",
+                    "source": "C:\\Users\\Arum\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\432eb0b679542df0b1d23de2b1666b12\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5d0c91568ea27c8f57d64897f93443f9/res/values-ky/values.xml",
+                    "source": "C:\\Users\\Arum\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\5cad439c02bd47f0916da86e57dde3ad\\res\\values-ky\\values-ky.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,1862",
+                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
+                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,1938"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,4562",
+                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
+                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,4638"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Arum\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.0.1.aar\\d3afef15f42cc91852acae8ce69c6442\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -69,6 +52,23 @@
                         "startOffsets": "3007",
                         "endColumns": "220",
                         "endOffsets": "3223"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Arum\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\78ed49cbcd14df1965cf655b73d9d68a\\res\\values-ky\\values-ky.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4643",
+                        "endColumns": "100",
+                        "endOffsets": "4739"
                     }
                 }
             ]

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\Arum\\AndroidStudioProjects\\Gudang-Bidan\\GudangBidan\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/af83f7009821c09c0021e77eb6958748/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Arum\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\93da18e8c153a9ecbecc81821b6724fa\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/macbook-air/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/63f678f2f206fb901cdd4ceb28c13e18/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Arum\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\5cad439c02bd47f0916da86e57dde3ad\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

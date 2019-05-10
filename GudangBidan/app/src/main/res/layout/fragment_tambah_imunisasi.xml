@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/frameLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".tambahImunisasi"
+android:background="@color/colorPrimary">
+
+<!-- TODO: Update blank fragment layout -->
+
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/putih"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/textRegImunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_regImunisasi"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editRegImunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hintRegImunisasi"
+                android:inputType="number"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/textNamaBayi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Bayi"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNamaBayi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_namaBayi"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/textNamaIbu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Ibu"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNamaIbu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_namaIbu"
+                android:inputType="textMultiLine|text"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/textNamaAyah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Ayah"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNamaAyah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_namaAyah"
+                android:inputType="textMultiLine|text"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/textTanggalLahirBayi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir Bayi"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTanggalLahirBayi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Ketikkan tanggal lahir bayi disini"
+                android:textSize="@dimen/text_size2"
+                android:inputType="none"/>
+
+            <TextView
+                android:id="@+id/textTanggalImunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Imunisasi"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTangalImunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/hint_tanggalImunisasi"
+                android:inputType="none"
+                android:textSize="@dimen/text_size2" />
+
+
+            <TextView
+                android:id="@+id/textJenisImunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Imunisasi"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/hepatitisB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hepatitis B"/>
+            <CheckBox
+                android:id="@+id/polio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Polio"/>
+            <CheckBox
+                android:id="@+id/BCG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BCG"/>
+            <CheckBox
+                android:id="@+id/campak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Campak (Rubeola)"/>
+            <CheckBox
+                android:id="@+id/pentavalen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pentavalen (DPT-HB-HiB)"/>
+            <CheckBox
+                android:id="@+id/MMR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MMR"/>
+            <CheckBox
+                android:id="@+id/tifoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tifoid"/>
+            <CheckBox
+                android:id="@+id/rotavirus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rotavirus"/>
+            <CheckBox
+                android:id="@+id/pneumokokus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pneumokokus (PCV)"/>
+            <CheckBox
+                android:id="@+id/varicella"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Varicella"/>
+            <CheckBox
+                android:id="@+id/influenza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Influenza"/>
+            <CheckBox
+                android:id="@+id/hepatitisA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hepatitis A"/>
+            <CheckBox
+                android:id="@+id/HPV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Human Papiloma Virus"/>
+
+            <Button
+                android:id="@+id/btnSubmitPasien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="237dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/text_tambahData"
+                android:textColor="@color/textColor_button"
+                android:textSize="@dimen/text_size2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editDiagnosa"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

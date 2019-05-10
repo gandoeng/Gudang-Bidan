@@ -5,27 +5,26 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="METHOD_DELETED"
     plugin-version="3.3.1"
-    timestamp="1557454980064"
+    timestamp="1557455175373"
     token="906637879327845118"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="718" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="81" />
+        duration="0" />
     <task
         name="verifier"
-        duration="9" />
+        duration="0" />
 
     <artifact
-        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
 
     <build
@@ -79,6 +78,14 @@
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1557455175373"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/macbook-air/Documents/Gudang-Bidan/GudangBidan/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
     </build>
 

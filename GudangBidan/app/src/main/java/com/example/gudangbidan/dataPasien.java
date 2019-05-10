@@ -2,6 +2,7 @@ package com.example.gudangbidan;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +33,7 @@ public class dataPasien extends AppCompatActivity {
 
     //inisialisasi pasien
     pasien p;
+    penyakit t;
 
 
     @Override
@@ -41,6 +43,7 @@ public class dataPasien extends AppCompatActivity {
 
         //memanggil pasien
         p = new pasien();
+        t = new penyakit();
 
         //memanggil id
         editIdPasien = (TextView) findViewById(R.id.editIdPasien);
@@ -87,7 +90,10 @@ public class dataPasien extends AppCompatActivity {
         });
 
         //memanggil update data
-        //updateData();
+        updateData();
+
+        //memanggil hapus data
+        hapusData();
     }
 
     public pasien dataBaru(){
@@ -96,6 +102,18 @@ public class dataPasien extends AppCompatActivity {
         p.setIdPasien(Integer.parseInt(editIdPasien.getText().toString()));
 
         return p;
+    }
+
+    public pasien idPasien(){
+        pasien e = new pasien();
+        e.setIdPasien(Integer.parseInt(editIdPasien.getText().toString()));
+        return e;
+    }
+
+    public  penyakit idPenyakit(){
+        t.setId_pasien(Integer.parseInt(editIdPasien.getText().toString()));
+
+        return t;
     }
 
     public void updateData(){
@@ -115,6 +133,25 @@ public class dataPasien extends AppCompatActivity {
                     } else{
                         Toast.makeText(dataPasien.this, "Update gagal", Toast.LENGTH_LONG).show();
                     }
+                }
+            }
+        });
+    }
+
+    public void hapusData(){
+        btnHapusPasien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean hapusPasien = db.hapusPasien(idPasien());
+                boolean hapusPenyakit = db.hapusPenyakit(idPenyakit());
+
+                if(hapusPasien==true && hapusPenyakit == true){
+                    Intent i = new Intent(dataPasien.this, MainActivity.class);
+                    startActivity(i);
+
+                    Toast.makeText(dataPasien.this,"Hapus berhasil",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(dataPasien.this,"Hapus gagal", Toast.LENGTH_LONG).show();
                 }
             }
         });

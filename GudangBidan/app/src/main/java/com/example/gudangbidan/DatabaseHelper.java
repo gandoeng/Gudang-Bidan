@@ -164,10 +164,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(this.nama,p.getNama());
         contentValues.put(this.tanggal_lahir,p.getTanggal_lahir());
 
-        String whereClause = "id=?";
-        String whereArgs[] ={String.valueOf(p.getIdPasien())};
+        long result = db.update(pasien, contentValues, "id_pasien = "+p.getIdPasien(), null );
 
-        long result = db.update(pasien, contentValues, whereClause, whereArgs );
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    //hapus pasien
+    public boolean hapusPasien(pasien p){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        long result = db.delete(pasien,"id_pasien = " + p.getId(),null);
 
         if(result == -1)
             return false;
@@ -222,6 +231,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+
+    //hapus pasien
+    public boolean hapusPenyakit(penyakit p){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        long result = db.delete(penyakit,"id_pasien2 = "+p.getId_pasien(),null);
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
 
     // ---------------------------------------------- Methode tabel user --------------------------------------------- //
 

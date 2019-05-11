@@ -129,7 +129,7 @@ public class tambahData extends Fragment {
         t.setDiagnosa(editDiagnosa.getText().toString());
         t.setKeluhan(editKeluhan.getText().toString());
         t.setId_pasien(p.getIdPasien());
-        t.setTanggal_periksa(editTanggalPeriksa.toString());
+        t.setTanggal_periksa(editTanggalPeriksa.getText().toString());
         return t;
     }
 

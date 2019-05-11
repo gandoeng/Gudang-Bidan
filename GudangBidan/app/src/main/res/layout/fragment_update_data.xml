@@ -109,7 +109,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="23dp"
-                    android:layout_marginBottom="237dp"
                     android:background="@color/colorPrimaryDark"
                     android:text="@string/text_tambahData"
                     android:textColor="@color/textColor_button"

@@ -7,18 +7,34 @@ import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Locale;
 
 public class dataPasien extends AppCompatActivity {
+
+    //inisialisasi array
+    private List<penyakit> penyakitList = new ArrayList<>();
+
+    //inisialisasi Recyclerview
+    private RecyclerView recyclerView;
+    private LinearLayoutManager layoutManager;
+    private penyakitAdapter adapter;
+    private TextView txt_resultAdapter;
+
+
 
     //tanggal
     final Calendar myCalendar = Calendar.getInstance();
@@ -94,6 +110,29 @@ public class dataPasien extends AppCompatActivity {
 
         //memanggil hapus data
         hapusData();
+
+        //init recyclerview beserta adapternya
+        recyclerView = findViewById(R.id.listP);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+
+        penyakitList = db.getPenyakit(idPenyakit());
+        adapter = new penyakitAdapter(penyakitList);
+        recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
+        //memanggil data kosong
+        txt_resultAdapter = findViewById(R.id.txtResultadapter);
+
+        //mengecek apakah ada data pada recyclerview
+        if (adapter.getItemCount() == 0){
+            txt_resultAdapter.setVisibility(View.VISIBLE);
+            recyclerView.setVisibility(View.GONE);
+        } else {
+            txt_resultAdapter.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.VISIBLE);
+        }
     }
 
     public pasien dataBaru(){

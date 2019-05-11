@@ -1,6 +1,8 @@
 package com.example.gudangbidan;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,13 +26,29 @@ public class splasScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(splasScreen.this,Login.class);
 
-                //menghubungkan activity splahscreen ke MainActivity
-                startActivity(i);
+                //memanggil session
+                SharedPreferences mSettings = splasScreen.this.getSharedPreferences("akun", Context.MODE_PRIVATE);
+                String uname = mSettings.getString("username","keluar");
+                String pas = mSettings.getString("password","keluar");
 
-                //jeda selesai splashScreen
-                this.finish();
+                if(uname == "keluar" && pas == "keluar") {
+                    Intent i = new Intent(splasScreen.this, Login.class);
+
+                    //menghubungkan activity splahscreen ke MainActivity
+                    startActivity(i);
+
+                    //jeda selesai splashScreen
+                    this.finish();
+                } else {
+                    Intent i = new Intent(splasScreen.this, BerandaLogin.class);
+
+                    //menghubungkan activity splahscreen ke MainActivity
+                    startActivity(i);
+
+                    //jeda selesai splashScreen
+                    this.finish();
+                }
             }
 
             private void finish(){

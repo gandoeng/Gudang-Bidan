@@ -12,10 +12,19 @@
         android:roundIcon="@mipmap/rekam_medis"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dataPasien"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity android:name=".Profil" />
+        <activity
+            android:name=".dataBayi"
+            android:parentActivityName=".MainActivity2"></activity>
+        <activity
+            android:name=".MainActivity2"
+            android:parentActivityName=".BerandaLogin"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".dataPasien"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Profil"
+            android:parentActivityName=".BerandaLogin" />
         <activity android:name=".Register">
             <intent-filter>
                 <action android:name="android.intent.action.REGISTER" />

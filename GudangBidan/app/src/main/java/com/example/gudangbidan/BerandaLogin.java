@@ -31,8 +31,17 @@ public class BerandaLogin extends AppCompatActivity {
                 pasien umum index ke-1
                 pengaturan index ke-2
              */
-
-            if(i == 1) {
+            if(i == 0){
+                // karena child adalah cardview maka panggil cardview
+                CardView cardView = (CardView) mainGrid.getChildAt(i);
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent pasien = new Intent(BerandaLogin.this, MainActivity2.class);
+                        startActivity(pasien);
+                    }
+                });
+            }else if(i == 1) {
                 // karena child adalah cardview maka panggil cardview
                 CardView cardView = (CardView) mainGrid.getChildAt(i);
                 cardView.setOnClickListener(new View.OnClickListener() {

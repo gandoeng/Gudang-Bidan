@@ -21,10 +21,18 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.gudangbidan.dataBayi"
+            android:parentActivityName="com.example.gudangbidan.MainActivity2" />
+        <activity
+            android:name="com.example.gudangbidan.MainActivity2"
+            android:parentActivityName="com.example.gudangbidan.BerandaLogin"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
             android:name="com.example.gudangbidan.dataPasien"
-            android:parentActivityName="com.example.gudangbidan.MainActivity" >
-        </activity>
-        <activity android:name="com.example.gudangbidan.Profil" />
+            android:parentActivityName="com.example.gudangbidan.MainActivity" />
+        <activity
+            android:name="com.example.gudangbidan.Profil"
+            android:parentActivityName="com.example.gudangbidan.BerandaLogin" />
         <activity android:name="com.example.gudangbidan.Register" >
             <intent-filter>
                 <action android:name="android.intent.action.REGISTER" />

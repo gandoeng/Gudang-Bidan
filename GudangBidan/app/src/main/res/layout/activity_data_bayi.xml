@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dataPasien"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/putih"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textRegrister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_noRegristrasi"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editIdBayi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="No register kosong"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/textNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_bayi"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/textIbu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ibu"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editIbu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/text_size2" />
+
+
+            <TextView
+                android:id="@+id/textAyah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ayah"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editAyah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/textTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir Bayi"
+                android:textSize="@dimen/text_size2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none"
+                android:textSize="@dimen/text_size2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnUpdateBayi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/text_updateData"
+                    android:textColor="@color/textColor_button"
+                    android:textSize="@dimen/text_size2" />
+
+                <Button
+                    android:id="@+id/btnHapusBayi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/text_hapus"
+                    android:textColor="@color/textColor_button"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="REKAM IMUNISASI"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtResultadapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="DATA MASIH KOSONG" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

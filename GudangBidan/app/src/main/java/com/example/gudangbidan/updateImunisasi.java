@@ -8,8 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -27,8 +30,9 @@ public class updateImunisasi extends Fragment {
     DatabaseHelper myDB;
 
     //inisialisasi id dari atribut yang ingin dipanggil
-    EditText editIdBayi,editTanggalImunisasi, imunisasiTambahan;
+    EditText editIdBayi,editTanggalImunisasi;
     Button tambah;
+    Spinner jenis;
 
     //inisialisasi class penyakit
     imunisasi i;
@@ -53,8 +57,9 @@ public class updateImunisasi extends Fragment {
         //memanggil atribut yang ada di layout
         editIdBayi = view.findViewById(R.id.editIdBayi);
         editTanggalImunisasi = view.findViewById(R.id.editTanggalImunisasi);
-        imunisasiTambahan = view.findViewById(R.id.imunisasiTambahan);
         tambah = view.findViewById(R.id.btnSubmitBayi);
+        jenis = view.findViewById(R.id.jenis);
+
 
 
         //Datepicker tanggal periksa
@@ -83,24 +88,64 @@ public class updateImunisasi extends Fragment {
 
 
         //aksi tambah data
-        //addData();
+        addData();
 
         return  view;
     }
 
     //simpan data ke class penyakit
     public imunisasi tambahBayi(){
-        i.setId_bayi(Integer.parseInt(String.valueOf(editIdBayi.getText())));
+        i.setId_bayi(Integer.parseInt(editIdBayi.getText().toString()));
 
-        boolean cek = myDB.cekPasien(i.getId_bayi());
+        boolean cek = myDB.cekBayi(i.getId_bayi());
 
         if(cek == true){
             i.setTgl_imunisasi(editTanggalImunisasi.getText().toString());
-
+            i.setJenis(jenis.getSelectedItem().toString());
             return  i;
         } else {
             return null;
         }
+    }
+
+    //tambah data ke kolom imunisasi
+    public void addData(){
+
+        //membuat fungsi klik tombol
+        tambah.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        if(editIdBayi.getText().toString().length() == 0){
+                            editIdBayi.setError("Wajib Diisi");
+                        } else if(editTanggalImunisasi.getText().toString().length() == 0){
+                            editTanggalImunisasi.setError("Wajib diisi");
+                        } else {
+                            if (tambahBayi() == null) {
+                                Toast.makeText(getActivity(), "No. Register tidak ditemukan",
+                                        Toast.LENGTH_LONG).show();
+                            } else {
+                                //menyimpan data ke dalam tabel penyakit
+                                boolean insertDataPenyakit = myDB.insertDataImunisasi(tambahBayi());
+
+                                //cek apakah berhasil ditambahkan atau tidak
+                                if (insertDataPenyakit == true) {
+                                    Toast.makeText(getActivity(), "Tersimpan",
+                                            Toast.LENGTH_LONG).show();
+                                    editIdBayi.getText().clear();
+                                    editTanggalImunisasi.getText().clear();
+                                } else {
+                                    Toast.makeText(getActivity(), "Gagal",
+                                            Toast.LENGTH_LONG).show();
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+        );
     }
 
 

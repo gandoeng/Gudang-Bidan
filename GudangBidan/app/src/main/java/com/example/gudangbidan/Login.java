@@ -1,7 +1,9 @@
 package com.example.gudangbidan;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -64,6 +66,13 @@ public class Login extends AppCompatActivity {
                     String pwd = mTextPassword.getText().toString().trim();
                     Boolean res = db.checkUser(usernm, pwd);
                     if (res == true) {
+                        //session menyimpan data login
+                        SharedPreferences mSettings = Login.this.getSharedPreferences("akun", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = mSettings.edit();
+                        editor.putString("username", usernm);
+                        editor.putString("password", pwd);
+                        editor.apply();
+
                         Intent LoginIntent = new Intent(Login.this, BerandaLogin.class);
                         startActivity(LoginIntent);
                     } else {

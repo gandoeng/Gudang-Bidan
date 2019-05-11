@@ -17,6 +17,12 @@ public class penyakit {
         this.diagnosa = diagnosa;
     }
 
+    public penyakit(String keluhan, String diagnosa, String tanggal_periksa){
+        this.keluhan = keluhan;
+        this.diagnosa = diagnosa;
+        this.tanggal_periksa = tanggal_periksa;
+    }
+
     //setter
     public void setDiagnosa(String diagnosa){
         this.diagnosa = diagnosa;

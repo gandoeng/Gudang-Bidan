@@ -1,6 +1,8 @@
 package com.example.gudangbidan;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.ContactsContract;
@@ -45,6 +47,11 @@ public class Profil extends AppCompatActivity {
 
         mGoogleSignInClient =GoogleSignIn.getClient(this,gso);
 
+        //memanggil session
+        SharedPreferences mSettings = Profil.this.getSharedPreferences("akun", Context.MODE_PRIVATE);
+        String uname = mSettings.getString("username","keluar");
+        String pas = mSettings.getString("password","keluar");
+
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(Profil.this);
         if(acct !=null){
             String personName = acct.getDisplayName();
@@ -54,7 +61,13 @@ public class Profil extends AppCompatActivity {
             nameprofil.setText("Nama: " + personName);
             emailprofil.setText("Email: " + personEmail);
             Glide.with(this).load(personPhoto).into(fotoprofil);
-        }//if
+        } else if ( uname != "keluar" && pas !="keluar"){
+            nameprofil.setText("Nama : " +uname);
+        }
+
+
+
+
 
         SignOut.setOnClickListener(new View.OnClickListener()
 
@@ -62,6 +75,13 @@ public class Profil extends AppCompatActivity {
             @Override
             public void onClick (View view){
                 sign_Out();
+
+                //session menyimpan data login
+                SharedPreferences mSettings = Profil.this.getSharedPreferences("akun", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = mSettings.edit();
+                editor.putString("username", "keluar");
+                editor.putString("password", "keluar");
+                editor.apply();
             }//onClick
         });//setOnClick
 

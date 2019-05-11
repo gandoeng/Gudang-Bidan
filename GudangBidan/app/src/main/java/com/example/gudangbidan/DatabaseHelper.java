@@ -53,14 +53,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String namaIbu_bayi = "namaIbu_bayi";
     public static final String namaAyah_bayi = "namaAyah_bayi";
 
-    //Deklarasi tabel imunisasi
-    public static final String imunisasi = "imunisasi";
 
-    //Deklarasi kolom tabel imunisasi
+    //Deklarasi tabel jenis imunisasi HB, BCG, polio, DPT1, polio2, DPT2, polio3, DPT3, polio4, IPV, campak;
+    public static  final String imunisasi = "imunisasi";
+
+    //deklrasasii kolom jenis imunisasi
     public static final String tanggal_imunisasi = "tanggal_imunisasi";
-    public static final String jenis_imunisasi = "jenis_imunisasi";
-    public static final String id_bayi2 = "id_bayi2";
-
+    public static final String jenis = "jenis";
 
     //Setiap method ini dipanggil maka database akan terbentuk
     public DatabaseHelper(@Nullable Context context) {
@@ -101,11 +100,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         " DATE," + namaIbu_bayi + " TEXT," + namaAyah_bayi + " TEXT" + ");"
         );
 
+        //create table jenis imunisasi
         db.execSQL(
                 "CREATE TABLE " + imunisasi +
-                        "(" + id_bayi2 + " INTEGER," + jenis_imunisasi + " TEXT," + tanggal_imunisasi + " DATE, " +
-                        "FOREIGN KEY ("+ id_bayi2 + ") REFERENCES " + bayi + "(" + id_bayi
-                        + ") );"
+                        "(" + id_bayi + " INTEGER, "+ tanggal_imunisasi + " DATE, "+ jenis + " TEXT);"
         );
 
 
@@ -128,6 +126,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         //drop tabel user
         db.execSQL(
                 "DROP TABLE IF EXISTS " + user+";"
+        );
+
+        db.execSQL(
+                "DROP TABLE IF EXISTS " + imunisasi+";"
         );
 
         //create table
@@ -158,7 +160,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public List<pasien> getNamaPasien(){
         List<pasien> listPasien = new ArrayList<>();
 
-        String selectQuery = "SELECT * FROM "+ pasien;
+        String selectQuery = "SELECT * FROM "+ pasien + " ORDER BY nama ASC";
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
@@ -278,6 +280,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    //menampilkan penyakit
+    public List<penyakit> getPenyakit(penyakit t){
+        List<penyakit> penyakitList = new ArrayList<>();
+
+        String selectQuery = "SELECT * FROM " + penyakit + " WHERE id_pasien2 = " + t.getId_pasien();
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do {
+                penyakit pen = new penyakit(cursor.getString(1), cursor.getString(2), cursor.getString(3));
+                penyakitList.add(pen);
+            } while (cursor.moveToNext());
+        } else {
+            return null;
+        }
+
+        return penyakitList;
+    }
+
     // ---------------------------------------------- Methode tabel bayi ----------------------------------------------- //
 
     //method menambahkan data pada tabel bayi
@@ -300,6 +324,71 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    public List<bayi> getBayi(){
+        List<bayi> bayiList = new ArrayList<>();
+
+        String selectQuery = "SELECT * FROM " + bayi + " ORDER BY nama_bayi ASC";
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do {
+                bayi bay = new bayi(cursor.getInt(0), cursor.getString(1));
+                bayiList.add(bay);
+            } while (cursor.moveToNext());
+        }
+
+        return bayiList;
+    }
+
+    //hapus bayi
+    public boolean hapusBayi(bayi p){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        long result = db.delete(bayi,"id_bayi = "+p.getIdBayi(),null);
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    //update data bayi
+    public boolean updateBayi (bayi b){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(this.nama_bayi,b.getNamaBayi());
+        contentValues.put(this.nama_bayi,b.getNamaAyah_bayi());
+        contentValues.put(this.nama_bayi,b.getNamaIbu_bayi());
+        contentValues.put(this.tgllahir_bayi,b.getTglLahir_Bayi());
+
+        long result = db.update(pasien, contentValues, "id_bayi = "+b.getIdBayi(), null );
+
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    //mengambil 1 data bayi
+    public bayi cariBayi (int id){
+        String selectQuery = "SELECT * FROM "+ bayi + " WHERE id_bayi = " + id;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            bayi bay = new bayi(cursor.getInt(0),cursor.getString(1),
+                    cursor.getString(2),cursor.getString(3),
+                    cursor.getString(4));
+            return bay;
+        } else {
+            return null;
+        }
+
+
+    }
     // ---------------------------------------------- Methode tabel imunisasi --------------------------------------------- //
 
     public boolean insertDataImunisasi(imunisasi t){
@@ -307,9 +396,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(this.id_bayi2, t.getId_bayi());
+        contentValues.put(this.id_bayi, t.getId_bayi());
         contentValues.put(this.tanggal_imunisasi,t.getTgl_imunisasi());
-        contentValues.put(this.jenis_imunisasi, t.getJenis_imunisasi());
+        contentValues.put(this.jenis, t.getJenis());
+
 
         long result = db.insert(imunisasi, null, contentValues );
 
@@ -324,7 +414,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         int i = 0;
 
         //kode SQLite
-        String SelectQuery = "SELECT * FROM "+imunisasi+" WHERE "+id_bayi2+" = "+p;
+        String SelectQuery = "SELECT * FROM "+imunisasi+" WHERE "+id_bayi+" = "+p;
 
         //menampilkan pesan error di log jika ada error
         Log.e(LOG, SelectQuery);
@@ -346,16 +436,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return false;
     }
 
-    //hapus bayi
-    public boolean hapusBayi(bayi p){
+    //hapus imunisasi
+    public boolean hapusImunisasi(imunisasi i){
         SQLiteDatabase db = this.getWritableDatabase();
 
-        long result = db.delete(bayi,"id_bayi2 = "+p.getIdBayi(),null);
+        long result = db.delete(imunisasi,"id_bayi = "+i.getId_bayi(),null);
 
         if(result == -1)
             return false;
         else
             return true;
+    }
+
+    //menampilkan penyakit
+    public List<imunisasi> getImunisasi(int i){
+        List<imunisasi> imunisasiList = new ArrayList<>();
+
+        String selectQuery = "SELECT * FROM " + imunisasi + " WHERE id_bayi = " + i;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do {
+                imunisasi imun = new imunisasi(cursor.getString(1), cursor.getString(2));
+                imunisasiList.add(imun);
+            } while (cursor.moveToNext());
+        } else {
+            return null;
+        }
+
+        return imunisasiList;
     }
 
 

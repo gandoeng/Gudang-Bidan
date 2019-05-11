@@ -16,8 +16,8 @@
     <string name="hint_keluhan">Ketikkan keluhan disini</string>
     <string name="text_diagnosa">Diagnosa</string>
     <string name="hint_diagnosa">Ketikkan diagnosa disini</string>
-    <string name="title_tambahData">Tambah</string>
-    <string name="title_pasien">Diagnosa</string>
+    <string name="title_tambahData">Baru</string>
+    <string name="title_pasien">Tambah</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -44,5 +44,23 @@
     <string name="hint_namaIbu">Ketikkan nama ibu disini</string>
     <string name="hint_tanggalImunisasi">Ketikkan tanggal imunisasi disini</string>
     <string name="hint_namaAyah">Ketikkan nama ayah disini</string>
+    <string name="text_bayi">Nama Bayi</string>
+    <string name="text_ayah">Nama Ayah</string>
+    <string name="text_ibu">Nama Ibu</string>
+
+    <!--jenis imunisasi -->
+    <string-array name="imunisasi">
+        <item>HB-0 (0-7 hari)</item>
+        <item>BCG</item>
+        <item>Polio</item>
+        <item>DPT-HB-HiB 1</item>
+        <item>Polio 2</item>
+        <item>DPT-HB-HiB 2</item>
+        <item>Polio 3</item>
+        <item>DPT-HB-HiB 3</item>
+        <item>Polio 4</item>
+        <item>IPV</item>
+        <item>Campak</item>
+    </string-array>
 
 </resources>

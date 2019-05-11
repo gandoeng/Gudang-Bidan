@@ -59,7 +59,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/editTangalImunisasi"
+                        android:id="@+id/editTanggalImunisasi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:clickable="true"
@@ -79,73 +79,17 @@
                         android:textSize="@dimen/text_size"
                         android:textStyle="bold" />
 
-                    <CheckBox
-                        android:id="@+id/hepatitisB"
+                    <Spinner
+                        android:id="@+id/jenis"
+                        android:padding="7dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="HB-0 (0-7 hari)"/>
-                    <CheckBox
-                        android:id="@+id/BCG"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="BCG"/>
-                    <CheckBox
-                        android:id="@+id/polio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Polio"/>
-                    <CheckBox
-                        android:id="@+id/DPT1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="DPT-HB-HiB 1"/>
-                    <CheckBox
-                        android:id="@+id/polio2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Polio 2"/>
-                    <CheckBox
-                        android:id="@+id/DPT2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="DPT-HB-HiB 2"/>
-                    <CheckBox
-                        android:id="@+id/polio3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Polio 3"/>
-                    <CheckBox
-                        android:id="@+id/DPT3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="DPT-HB-HiB 3"/>
-                    <CheckBox
-                        android:id="@+id/polio4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Polio 3"/>
-                    <CheckBox
-                        android:id="@+id/IPV"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="IPV"/>
-                    <CheckBox
-                        android:id="@+id/campak"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Campak"/>
-                    <EditText
-                        android:id="@+id/imunisasiTambahan"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Imunisasi tambahan"/>
-
+                        android:entries="@array/imunisasi"/>
                     <Button
                         android:id="@+id/btnSubmitBayi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="23dp"
-                        android:layout_marginBottom="237dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/text_tambahData"
                         android:textColor="@color/textColor_button"
@@ -154,7 +98,6 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.498"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imunisasiTambahan"
                         app:layout_constraintVertical_bias="0.0" />
 
                 </LinearLayout>

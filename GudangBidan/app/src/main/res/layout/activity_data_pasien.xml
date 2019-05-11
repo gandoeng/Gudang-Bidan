@@ -13,16 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="15dp"
-        >
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
-            android:id="@+id/linearLayout1"
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:background="@color/putih"
-            android:padding="15dp"
-            >
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <TextView
                 android:id="@+id/textRegrister"
@@ -69,13 +69,13 @@
                 android:id="@+id/editTanggalLahir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:clickable="true"
                 android:editable="false"
+                android:ems="10"
                 android:focusable="false"
                 android:hint="@string/hint_tanggal"
-                android:textSize="@dimen/text_size2"
-                android:inputType="none"/>
+                android:inputType="none"
+                android:textSize="@dimen/text_size2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -87,37 +87,37 @@
                     android:id="@+id/btnUpdatePasien"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:layout_weight="2"
                     android:background="@color/colorPrimaryDark"
                     android:text="@string/text_updateData"
                     android:textColor="@color/textColor_button"
-                    android:textSize="@dimen/text_size2"
-                    android:layout_margin="10dp"/>
+                    android:textSize="@dimen/text_size2" />
 
                 <Button
                     android:id="@+id/btnHapusPasien"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:layout_weight="2"
                     android:background="@color/colorPrimaryDark"
                     android:text="@string/text_hapus"
                     android:textColor="@color/textColor_button"
-                    android:textSize="@dimen/text_size2"
-                    android:layout_margin="10dp"/>
+                    android:textSize="@dimen/text_size2" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="12sp"
-                android:text="REKAM MEDIS"
-                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:paddingTop="5dp"/>
+                android:text="REKAM MEDIS"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txt_resultadapter"
+                android:id="@+id/txtResultadapter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -127,7 +127,7 @@
                 android:id="@+id/listP"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:clickable="true"/>
+                />
 
         </LinearLayout>
 

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
@@ -32,9 +33,10 @@ public class tambahImunisasi extends Fragment {
     imunisasi i;
 
     //mendeklarasikan textPlan dan btn
-    EditText editNamaBayi, editNamaIbu, editNamaAyah, editTanggalLahirBayi,editIdBayi,editTanggalImunisasi, imunisasiTambahan;
+    EditText editNamaBayi, editNamaIbu, editNamaAyah, editTanggalLahirBayi,editIdBayi
+            ,editTanggalImunisasi, editTambah;
     Button btnSubmitBayi;
-    CheckBox HB, BCG, polio, DPT1, polio2, DPT2, polio3, DPT3, polio4, IPV, campak;
+    Spinner jenis;
 
     public tambahImunisasi() {
         // Required empty public constructor
@@ -57,7 +59,7 @@ public class tambahImunisasi extends Fragment {
         editNamaIbu = view.findViewById(R.id.editNamaIbu);
         editNamaAyah = view.findViewById(R.id.editNamaAyah);
         btnSubmitBayi = view.findViewById(R.id.btnSubmitBayi);
-
+        jenis = view.findViewById(R.id.jenis);
 
         //Datepicker tanggal lahir
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
@@ -122,13 +124,16 @@ public class tambahImunisasi extends Fragment {
         b.setIdBayi(Integer.parseInt(String.valueOf(editIdBayi.getText())));
         b.setNamaBayi(editNamaBayi.getText().toString());
         b.setTglLahir_Bayi(editTanggalLahirBayi.getText().toString());
+        b.setNamaAyah_bayi(editNamaAyah.getText().toString());
+        b.setNamaIbu_bayi(editNamaIbu.getText().toString());
         return b;
     }
 
     public imunisasi tambahDataImunisasi(){
 
-        i.setId_bayi(i.getId_bayi());
-        i.setTgl_imunisasi(editTanggalImunisasi.toString());
+        i.setId_bayi(Integer.parseInt(editIdBayi.getText().toString()));
+        i.setTgl_imunisasi(editTanggalImunisasi.getText().toString());
+        i.setJenis(jenis.getSelectedItem().toString());
         return i;
     }
 
@@ -170,6 +175,8 @@ public class tambahImunisasi extends Fragment {
                                 editIdBayi.getText().clear();
                                 editNamaIbu.getText().clear();
                                 editNamaAyah.getText().clear();
+                                editTanggalImunisasi.getText().clear();
+
                             } else {
                                 Toast.makeText(getActivity(), "Gagal", Toast.LENGTH_LONG).show();
                             }

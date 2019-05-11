@@ -23,16 +23,12 @@ public class splasScreen extends AppCompatActivity {
 
         setContentView(R.layout.activity_splas_screen);
 
+
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                //memanggil session
-                SharedPreferences mSettings = splasScreen.this.getSharedPreferences("akun", Context.MODE_PRIVATE);
-                String uname = mSettings.getString("username","keluar");
-                String pas = mSettings.getString("password","keluar");
-
-                if(uname == "keluar" && pas == "keluar") {
                     Intent i = new Intent(splasScreen.this, Login.class);
 
                     //menghubungkan activity splahscreen ke MainActivity
@@ -40,15 +36,8 @@ public class splasScreen extends AppCompatActivity {
 
                     //jeda selesai splashScreen
                     this.finish();
-                } else {
-                    Intent i = new Intent(splasScreen.this, BerandaLogin.class);
 
-                    //menghubungkan activity splahscreen ke MainActivity
-                    startActivity(i);
 
-                    //jeda selesai splashScreen
-                    this.finish();
-                }
             }
 
             private void finish(){

@@ -48,7 +48,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.gudangbidan.Login" >
+        <activity
+            android:name="com.example.gudangbidan.Login"
+            android:theme="@style/Splashscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.LOGIN" />
 

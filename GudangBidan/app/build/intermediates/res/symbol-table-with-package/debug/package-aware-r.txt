@@ -922,7 +922,6 @@ id btnSubmitPasien
 id btnSubmitPenyakit
 id btnUpdateBayi
 id btnUpdatePasien
-id buttonLogin
 id buttonPanel
 id buttonSignout
 id button_Register
@@ -1116,11 +1115,11 @@ id textTanggalLahir
 id textTanggalLahirBayi
 id textTanggalPeriksa
 id textView
+id textView2
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textviewLogin
-id textviewRegister
 id time
 id title
 id titleDividerNoCustom

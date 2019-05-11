@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -40,47 +41,6 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         db = new DatabaseHelper(this);
-
-        mTextUsername = (EditText) findViewById(R.id.editUsername);
-        mTextPassword = (EditText) findViewById(R.id.editPassword);
-        mButtonLogin = (Button) findViewById(R.id.buttonLogin);
-        mTextViewRegister = (TextView)findViewById(R.id.textviewRegister);
-        mTextViewRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent registerIntent = new Intent(Login.this,Register.class);
-                startActivity(registerIntent);
-            }
-        });//onClick
-
-
-        mButtonLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(mTextUsername.getText().toString().length() == 0){
-                    mTextUsername.setError("Username belum diisi");
-                } else if(mTextPassword.getText().toString().length() == 0){
-                    mTextPassword.setError("Password belum diisi");
-                } else {
-                    String usernm = mTextUsername.getText().toString().trim();
-                    String pwd = mTextPassword.getText().toString().trim();
-                    Boolean res = db.checkUser(usernm, pwd);
-                    if (res == true) {
-                        //session menyimpan data login
-                        SharedPreferences mSettings = Login.this.getSharedPreferences("akun", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor = mSettings.edit();
-                        editor.putString("username", usernm);
-                        editor.putString("password", pwd);
-                        editor.apply();
-
-                        Intent LoginIntent = new Intent(Login.this, BerandaLogin.class);
-                        startActivity(LoginIntent);
-                    } else {
-                        Toast.makeText(Login.this, "Gagal Masuk", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            }
-        });//onClick
 
         googleSignInButton = findViewById(R.id.imagebuttonGoogle);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)

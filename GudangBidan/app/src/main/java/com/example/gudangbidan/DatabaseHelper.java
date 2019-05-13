@@ -359,11 +359,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(this.nama_bayi,b.getNamaBayi());
-        contentValues.put(this.nama_bayi,b.getNamaAyah_bayi());
-        contentValues.put(this.nama_bayi,b.getNamaIbu_bayi());
+        contentValues.put(this.namaAyah_bayi,b.getNamaAyah_bayi());
+        contentValues.put(this.namaIbu_bayi,b.getNamaIbu_bayi());
         contentValues.put(this.tgllahir_bayi,b.getTglLahir_Bayi());
 
-        long result = db.update(pasien, contentValues, "id_bayi = "+b.getIdBayi(), null );
+        long result = db.update(bayi, contentValues, "id_bayi = "+b.getIdBayi(), null );
 
         if(result == -1)
             return false;

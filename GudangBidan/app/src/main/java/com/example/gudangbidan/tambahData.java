@@ -168,6 +168,7 @@ public class tambahData extends Fragment {
                                 Toast.makeText(getActivity(), "Tesimpan", Toast.LENGTH_LONG).show();
                                 editNama.getText().clear();
                                 editTanggalLahir.getText().clear();
+                                editTanggalPeriksa.getText().clear();
                                 editIdPasien.getText().clear();
                                 editKeluhan.getText().clear();
                                 editDiagnosa.getText().clear();

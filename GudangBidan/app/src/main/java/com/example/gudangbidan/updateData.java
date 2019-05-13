@@ -141,6 +141,7 @@ public class updateData extends Fragment {
                                     idPasien.getText().clear();
                                     keluhan.getText().clear();
                                     diagnosa.getText().clear();
+                                    editTanggalPeriksa.getText().clear();
                                 } else {
                                     Toast.makeText(getActivity(), "Gagal",
                                             Toast.LENGTH_LONG).show();
